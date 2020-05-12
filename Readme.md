@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Александр Панков](https://up.htmlacademy.ru/htmlcss/28/user/1453733).
-* Наставник: [Андрей Грачев] (https://htmlacademy.ru/profile/id252055).
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/id252055).
 
 ---
 
