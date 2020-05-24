@@ -13,6 +13,11 @@
         <a href="index.html">
           <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
         </a>
+        <form action="blank.html" method="post">
+          <p>
+            <input id="search" type="text" name="search" placeholder="Поиск по сайту">
+          </p>
+        </form>
         <ul>
           <li><a href="blank.html">Валентин Петухов</a></li>
           <li><a href="blank.html">Выйти</a></li>
@@ -51,7 +56,51 @@
 
       <section>
         <h3>Фильтр:</h3>
-        <a href="blank.html">Показать</a>
+        <form action="blank.html" method="get">
+          <fieldset>
+            <legend>Цвета</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="color-choice" id="filter-color-black" checked>
+                <label for="filter-color-black">Чёрный</label>
+              </li>
+              <li>
+                <input type="checkbox" name="color-choice" id="filter-color-white">
+                <label for="filter-color-white">Белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="color-choice" id="filter-color-blue" checked>
+                <label for="filter-color-blue">Синий</label>
+              </li>
+              <li>
+                <input type="checkbox" name="color-choice" id="filter-color-red" checked>
+                <label for="filter-color-red">Красный</label>
+              </li>
+              <li>
+                <input type="checkbox" name="color-choice" id="filter-color-pink">
+                <label for="filter-color-pink">Розовый</label>
+              </li>
+            </ul>
+            </fieldset>
+        </form>
+
+        <form action="blank.html" method="get">
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li>
+                <input type="radio" name="option-choice" value="have-bluetooth" id="filter-have" checked>
+                <label for="filter-have">Есть</label>
+              </li>
+              <li>
+                <input type="radio" name="option-choice" value="dont-have-bluetooth" id="filter-dont-have">
+                <label for="filter-dont-have">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+
+        <button class="button" type="button">Показать</button>
       </section>
 
       <div>

@@ -13,6 +13,11 @@
         <a title="Главная страница">
           <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
         </a>
+        <form action="blank.html" method="post">
+          <p>
+            <input id="search" type="text" name="search" placeholder="Поиск по сайту">
+          </p>
+        </form>
         <a href="blank.html">Войти</a>
         <ul>
           <li><a href="blank.html">Сравнить</a></li>
@@ -175,19 +180,38 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="blank.html">Подробнее о нас</a>
+        <button class="button" type="button">Подробнее о нас</button>
       </section>
 
       <section>
         <h2>Контакты</h2>
 
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <a href="blank.html">
-          <img src="img/map-1.png" width="560" height="220" alt="Карта офиса по адресу улица Строителей, 15">
-        </a>
-        <a href="blank.html">Напишите нам</a>
-      </section>
 
+        <div class="pop-up">
+          <a href="blank.html">
+            <img src="img/map-1.png" width="560" height="220" alt="Карта офиса по адресу улица Строителей, 15">
+          </a>
+        </div>
+        <button class="button" type="button">Напишите нам</button>
+        <div class="pop-up">
+          <form action="blank.html" method="post">
+            <p>
+              <label for="user-name">Ваше имя:</label>
+              <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="user-email">Ваш e-mail:</label>
+              <input id="user-email" type="text" name="email" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="user-message">Текст письма:</label>
+              <input id="user-message" type="text" name="message" placeholder="В свободной форме">
+            </p>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer>
