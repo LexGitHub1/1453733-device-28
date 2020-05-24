@@ -188,13 +188,16 @@
 
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 
-        <div class="pop-up">
-          <a href="blank.html">
-            <img src="img/map-1.png" width="560" height="220" alt="Карта офиса по адресу улица Строителей, 15">
-          </a>
+        <img id="shop-map" src="img/map-1.png" width="560" height="220" alt="Карта офиса по адресу улица Строителей, 15">
+
+        <div id="pop-up-map" class="modal">
+          <span class="close">×</span>
+          <img src="img/map-1.png" class="modal-content" id="img-1" alt="Карта офиса по адресу улица Строителей, 15">
+          <div id="caption">Карта офиса по адресу улица Строителей, 15</div>
         </div>
-        <button class="button" type="button">Напишите нам</button>
-        <div class="pop-up">
+
+        <button class="button" type="button" id="write">Напишите нам</button>
+        <div>
           <form action="blank.html" method="post">
             <p>
               <label for="user-name">Ваше имя:</label>
@@ -242,5 +245,20 @@
       </ul>
     </footer>
 
+    <script>
+      var modal = document.getElementById('pop-up-map');
+      var img = document.getElementById('shop-map');
+      var modalImg = document.getElementById("img-1");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      };
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() {
+          modal.style.display = "none";
+      };
+      </script>
   </body>
 </html>
