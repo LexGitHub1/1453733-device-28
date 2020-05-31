@@ -13,9 +13,9 @@
         <a title="Главная страница">
           <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
         </a>
-        <form action="blank.html" method="post">
+        <form action="blank.html" method="GET">
           <p>
-            <input id="search" type="text" name="search" placeholder="Поиск по сайту">
+            <input type="search" name="search" placeholder="Поиск по сайту">
           </p>
         </form>
         <a href="blank.html">Войти</a>
@@ -180,40 +180,17 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <button class="button" type="button">Подробнее о нас</button>
+        <a href="blank.html">Подробнее о нас</a>
       </section>
 
       <section>
         <h2>Контакты</h2>
 
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-
-        <img id="shop-map" src="img/map-1.png" width="560" height="220" alt="Карта офиса по адресу улица Строителей, 15">
-
-        <div id="pop-up-map" class="modal">
-          <span class="close">×</span>
-          <img src="img/map-1.png" class="modal-content" id="img-1" alt="Карта офиса по адресу улица Строителей, 15">
-          <div id="caption">Карта офиса по адресу улица Строителей, 15</div>
-        </div>
-
-        <button class="button" type="button" id="write">Напишите нам</button>
-        <div>
-          <form action="blank.html" method="post">
-            <p>
-              <label for="user-name">Ваше имя:</label>
-              <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-            </p>
-            <p>
-              <label for="user-email">Ваш e-mail:</label>
-              <input id="user-email" type="text" name="email" placeholder="email@example.com">
-            </p>
-            <p>
-              <label for="user-message">Текст письма:</label>
-              <input id="user-message" type="text" name="message" placeholder="В свободной форме">
-            </p>
-            <button type="submit">Отправить</button>
-          </form>
-        </div>
+        <a href="blank.html">
+          <img src="img/map-1.png" width="560" height="220" alt="Карта офиса по адресу улица Строителей, 15">
+        </a>
+        <a href="blank.html">Напишите нам</a>
       </section>
     </main>
 
@@ -245,20 +222,28 @@
       </ul>
     </footer>
 
-    <script>
-      var modal = document.getElementById('pop-up-map');
-      var img = document.getElementById('shop-map');
-      var modalImg = document.getElementById("img-1");
-      var captionText = document.getElementById("caption");
-      img.onclick = function(){
-          modal.style.display = "block";
-          modalImg.src = this.src;
-          captionText.innerHTML = this.alt;
-      };
-      var span = document.getElementsByClassName("close")[0];
-      span.onclick = function() {
-          modal.style.display = "none";
-      };
-      </script>
+    <section class="modal">
+      <h2 class="visually-hidden">Карта офиса</h2>
+      <img src="img/map-big-1.png" width="994" height="593" alt="Карта офиса по адресу улица Строителей, 15">
+      <button type="button">X</button>
+    </section>
+
+    <div class="modal">
+      <form action="blank.html" method="post">
+        <p>
+          <label for="user-name">Ваше имя:</label>
+          <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="user-email">Ваш e-mail:</label>
+          <input id="user-email" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="user-message">Текст письма:</label>
+          <input id="user-message" type="textarea" name="message" placeholder="В свободной форме">
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>
