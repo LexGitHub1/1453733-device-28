@@ -15,7 +15,8 @@
         </a>
         <form action="blank.html" method="GET">
           <p>
-            <input type="search" name="search" placeholder="Поиск по сайту">
+            <span class="visually-hidden">Поиск по сайту</span>
+            <input id="search" type="search" name="search" placeholder="Поиск по сайту">
           </p>
         </form>
         <a href="blank.html">Войти</a>
@@ -109,9 +110,14 @@
           </table>
         </section>
 
-        <button type="button" name="slider-button-1"></button>
-        <button type="button" name="slider-button-2"></button>
-        <button type="button" name="slider-button-3"></button>
+        <button type="button" name="slider-button-1">
+          <span class="visually-hidden">Кнопка слайдера 1</span>
+        <button type="button" name="slider-button-2">
+          <span class="visually-hidden">Кнопка слайдера 2</span>
+        </button>
+        <button type="button" name="slider-button-3">
+          <span class="visually-hidden">Кнопка слайдера 3</span>
+        </button>
       </div>
 
       <section>
@@ -224,8 +230,11 @@
 
     <section class="modal">
       <h2 class="visually-hidden">Карта офиса</h2>
+
       <img src="img/map-big-1.png" width="994" height="593" alt="Карта офиса по адресу улица Строителей, 15">
-      <button type="button">X</button>
+      <button type="button">
+        <span class="visually-hidden">Кнопка закрытия окна с картой офиса</span>
+      </button>
     </section>
 
     <div class="modal">
@@ -240,11 +249,13 @@
         </p>
         <p>
           <label for="user-message">Текст письма:</label>
-          <textarea>В свободной форме</textarea>
+          <textarea id="user-message">В свободной форме</textarea>
         </p>
         <button type="submit">Отправить</button>
-        <button type="button">X</button>
       </form>
+      <button type="button">
+        <span class="visually-hidden">Кнопка закрытия окна формы обратной связи</span>
+      </button>
     </div>
   </body>
 </html>

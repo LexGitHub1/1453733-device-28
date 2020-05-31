@@ -15,7 +15,8 @@
         </a>
         <form action="blank.html" method="GET">
           <p>
-            <input type="search" name="search" placeholder="Поиск по сайту">
+            <span class="visually-hidden">Поиск по сайту</span>
+            <input id="search" type="search" name="search" placeholder="Поиск по сайту">
           </p>
         </form>
         <ul>
@@ -57,6 +58,12 @@
       <section>
         <h3>Фильтр:</h3>
         <form action="blank.html" method="get">
+          <fieldset>
+            <legend>Стоимость</legend>
+              от 0
+              <input type="range" id="cost" name="cost" min="0" max="8000" step="5000">
+              до 5000
+          </fieldset>
           <fieldset>
             <legend>Цвета</legend>
             <ul>
@@ -107,8 +114,16 @@
             <li><a href="blank.html">По популярности</a></li>
           </ul>
           <ul>
-            <li><a href="blank.html" title="Вверх"></a></li>
-            <li><a href="blank.html" title="Вниз"></a></li>
+            <li>
+              <a href="blank.html" title="Вверх">
+                <span class="visually-hidden">Сортировка товаров "сначала самые высокие в выбранной категории"</span>
+              </a>
+            </li>
+            <li>
+              <a href="blank.html" title="Вниз">
+                <span class="visually-hidden">Сортировка товаров "сначала самые низкие в выбранной категории"</span>
+              </a>
+            </li>
           </ul>
       </div>
 
