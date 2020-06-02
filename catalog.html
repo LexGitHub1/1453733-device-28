@@ -13,9 +13,9 @@
         <a href="index.html">
           <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
         </a>
-        <form action="blank.html" method="GET">
+        <form action="https://echo.htmlacademy.ru" method="GET">
           <p>
-            <span class="visually-hidden">Поиск по сайту</span>
+            <label for="search" class="visually-hidden">Поиск по сайту</label>
             <input id="search" type="search" name="search" placeholder="Поиск по сайту">
           </p>
         </form>
@@ -57,13 +57,29 @@
 
       <section>
         <h3>Фильтр:</h3>
-        <form action="blank.html" method="get">
-          <fieldset>
+
+        <form action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset class="filter-item">
             <legend>Стоимость</legend>
-              от 0
-              <input type="range" id="cost" name="cost" min="0" max="8000" step="5000">
-              до 5000
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle-toggle-min" tabindex="0"></div>
+                <div class="toggle-toggle-max" tabindex="0"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  от <input type="number" name="max-price" value="5000">
+                </label>
+              </div>
+            </div>
           </fieldset>
+
           <fieldset>
             <legend>Цвета</legend>
             <ul>
@@ -89,6 +105,7 @@
               </li>
             </ul>
           </fieldset>
+
           <fieldset>
             <legend>Bluetooth</legend>
             <ul>
