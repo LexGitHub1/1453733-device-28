@@ -1,0 +1,250 @@
+:root {
+  --basic-black: #000000;
+  --basic-dark: #363636;
+  --basic-grey: #464646;
+  --basic-half-grey: #7e7e7e;
+  --basic-grey-light: #e5e5e5;
+  --basic-white: #ffffff;
+
+  --special-yellow-dark: #f0c52e;
+  --special-fill: #f7e296;
+  --special-green: #91c92f;
+
+  --status-fill: #f6dada;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 300;
+  src:
+    url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 800;
+  src:
+    url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  src:
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 300;
+  src:
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+}
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+img { max-width: 100% }
+
+a { text-decoration: none }
+
+.visually-hidden { display: none }
+
+.main-header {
+  background-color: var(--special-fill);
+}
+
+.header-logo {
+  background-color: var(--special-fill);
+}
+
+.search {
+  color: var(--basic-half-grey);
+}
+
+.list { list-style: none }
+
+.header-user-enter,
+.header-user-compare,
+.header-user-cart {
+  color: var(--basic-black);
+}
+
+.header-user-out { color: var(--basic-half-grey);
+}
+
+.catalog {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.list-item {
+  color: var(--basic-black);
+
+  display: none;
+}
+
+.delivery,
+.warranty,
+.contacts {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+
+  color: var(--basic-black);
+}
+
+.breadcrumbs {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.filter-form {
+  background-color: var(--basic-grey-light);
+}
+
+.form-legend {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+
+  color: var(--basic-black);
+}
+
+.form-content {
+color: var(--basic-black);
+}
+
+.article-content {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+
+  color: var(--basic-black);
+}
+
+.article-content-price {
+  font-family: Gilroy;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+
+  color: var(--basic-black);
+}
+
+.section {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.section-content {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+
+  color: var(--basic-black);
+}
+
+.transport-company {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+
+  color: var(--basic-black);
+}
+
+.section-link {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: var(--basic-black);
+}
+
+.main-footer {
+  color: var(--basic-white);
+  background-color: var(--basic-dark);
+}
+
+.footer-user-enter,
+.footer-user-compare,
+.footer-user-cart,
+.footer-user-out {
+  color: var(--basic-half-grey);
+}
+
+.footer-link {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: var(--basic-white);
+}
+
+.footer-logo {
+  background-color: var(--basic-dark);
+}
+
+.footer-content {
+  color: var(--basic-white);
+}
+
+.footer-socials {
+  background-color: var(--basic-half-grey);
+  color: inherit;
+}
+
+.modal { display: none }
