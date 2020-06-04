@@ -23,7 +23,7 @@
         </form>
         <ul class="nav-menu">
           <li><a class="nav-menu-link" href="blank.html">Валентин Петухов</a></li>
-          <li><a class="nav-menu-link-out" href="blank.html">Выйти</a></li>
+          <li><a class="nav-manu-link nav-menu-link-out" href="blank.html">Выйти</a></li>
         </ul>
         <ul class="nav-menu">
           <li><a class="nav-menu-link" href="blank.html">Сравнить</a></li>
@@ -48,21 +48,21 @@
     </header>
 
     <main>
-      <section>
-        <h1 class="section-title">Моноподы для селфи</h1>
-          <ul class="section-breadcrumbs">
-            <li><a class="breadcrumbs" href="blank.html">Главная</a></li>
-            <li><a class="breadcrumbs" href="blank.html">Каталог товаров</a></li>
-            <li class="breadcrumbs">Моноподы для селфи</li>
+      <section class="breadcrumbs-menu">
+        <h1 class="breadcrumbs-menu-title">Моноподы для селфи</h1>
+          <ul class="breadcrumbs-menu-list">
+            <li><a class="breadcrumbs-menu-link" href="blank.html">Главная</a></li>
+            <li><a class="breadcrumbs-menu-link" href="blank.html">Каталог товаров</a></li>
+            <li class="breadcrumbs-menu-item">Моноподы для селфи</li>
           </ul>
       </section>
 
       <section>
-        <h3>Фильтр:</h3>
+        <h3 class="filter-title">Фильтр:</h3>
 
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="filter-item">
-            <legend>Стоимость</legend>
+            <legend class="form-legend">Стоимость</legend>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
@@ -76,7 +76,7 @@
                   от <input type="text" name="min-price" value="0">
                 </label>
                 <label class="max-price">
-                  от <input type="text" name="max-price" value="5000">
+                  до <input type="text" name="max-price" value="5000">
                 </label>
               </div>
             </div>
@@ -121,18 +121,18 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button section-link" type="submit">Показать</button>
+          <button class="button filter-buttons-item" type="submit">Показать</button>
         </form>
       </section>
 
       <div>
-        <p>Сортировка:</p>
+        <p class="filter-title">Сортировка:</p>
           <ul class="goods-sorting">
-            <li><a href="blank.html">По цене</a></li>
-            <li><a href="blank.html">По типу</a></li>
-            <li><a href="blank.html">По популярности</a></li>
+            <li><a class="goods-sorting-link" href="blank.html">По цене</a></li>
+            <li><a class="goods-sorting-link-type" href="blank.html">По типу</a></li>
+            <li><a class="goods-sorting-link-popular" href="blank.html">По популярности</a></li>
           </ul>
-          <ul>
+          <ul class="goods-icons">
             <li>
               <a href="blank.html" title="Вверх">
                 <span class="visually-hidden">Сортировка товаров "сначала самые высокие в выбранной категории"</span>
@@ -184,11 +184,11 @@
 
       <div>
         <ul class="goods-nav">
-          <li><a href="blank.html">Вперёд</a></li>
-          <li><a href="blank.html">1</a></li>
-          <li><a href="blank.html">2</a></li>
-          <li><a href="blank.html">3</a></li>
-          <li><a href="blank.html">Назад</a></li>
+          <li><a class="goods-nav-link" href="blank.html">Вперёд</a></li>
+          <li><a class="goods-nav-link" href="blank.html">1</a></li>
+          <li><a class="goods-nav-link-shadow" href="blank.html">2</a></li>
+          <li><a class="goods-nav-link-shadow" href="blank.html">3</a></li>
+          <li><a class="goods-nav-link" href="blank.html">Назад</a></li>
         </ul>
       </div>
     </main>
