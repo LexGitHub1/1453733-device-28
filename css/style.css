@@ -47,10 +47,7 @@
 
 body {
   min-width: 1200px;
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-style: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -58,65 +55,82 @@ body {
   background-color: var(--basic-white);
 }
 
-img { max-width: 100% }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-a { text-decoration: none }
+a {
+  text-decoration: none;
+}
 
-.visually-hidden { display: none }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
-.main-header {
+.main-header,
+.main-header-logo-link {
   background-color: var(--special-fill);
 }
 
-.header-logo {
-  background-color: var(--special-fill);
-}
-
-.search {
+.nav-search,
+.nav-menu-link-out {
   color: var(--basic-half-grey);
 }
 
-.list { list-style: none }
-
-.header-user-enter,
-.header-user-compare,
-.header-user-cart {
+.nav-menu-link,
+.main-submenu-link {
   color: var(--basic-black);
 }
 
-.header-user-out { color: var(--basic-half-grey);
+.nav-menu,
+.section-breadcrumbs,
+.form-choice-color,
+.form-choice-option,
+.goods-sorting
+.goods-nav {
+  list-style: none;
 }
 
-.catalog {
-  font-family: Gilroy;
+.main-menu-link {
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
 
   letter-spacing: 0.1em;
   text-transform: uppercase;
-}
 
-.list-item {
   color: var(--basic-black);
-
-  display: none;
 }
 
-.delivery,
-.warranty,
-.contacts {
-  font-family: Gilroy;
+.main-menu,
+.main-submenu {
+  list-style: none;
+  color: var(--basic-black);
+}
+
+.header-services-link {
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
 
   letter-spacing: 0.2em;
   text-transform: uppercase;
+
+  color: var(--basic-black);
 }
 
 .section-title {
-  font-family: Gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -125,7 +139,6 @@ a { text-decoration: none }
 }
 
 .breadcrumbs {
-  font-family: Open Sans;
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
@@ -139,7 +152,7 @@ a { text-decoration: none }
 }
 
 .form-legend {
-  font-family: Gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 14px;
   line-height: 17px;
@@ -149,11 +162,11 @@ a { text-decoration: none }
 }
 
 .form-content {
-color: var(--basic-black);
+  color: var(--basic-black);
 }
 
-.article-content {
-  font-family: Gilroy;
+.goods-card-link {
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -162,8 +175,8 @@ color: var(--basic-black);
   color: var(--basic-black);
 }
 
-.article-content-price {
-  font-family: Gilroy;
+.goods-card-content-price {
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
@@ -172,16 +185,17 @@ color: var(--basic-black);
   color: var(--basic-black);
 }
 
-.section {
-  font-family: Gilroy;
+.info-title,
+.contacts-title {
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
 }
 
-.section-content {
-  font-family: Open Sans;
+.info-content,
+.contacts-content {
   font-weight: 300;
   font-size: 15px;
   line-height: 28px;
@@ -190,7 +204,7 @@ color: var(--basic-black);
 }
 
 .transport-company {
-  font-family: Gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
@@ -198,8 +212,9 @@ color: var(--basic-black);
   color: var(--basic-black);
 }
 
-.section-link {
-  font-family: Gilroy;
+.info-link,
+.contacts-link {
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -222,8 +237,8 @@ color: var(--basic-black);
   color: var(--basic-half-grey);
 }
 
-.footer-link {
-  font-family: Gilroy;
+.footer-services-link {
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -234,7 +249,11 @@ color: var(--basic-black);
   color: var(--basic-white);
 }
 
-.footer-logo {
+.main-footer-logo {
+  background-color: var(--special-yellow-dark);
+}
+
+.footer-logo-link {
   background-color: var(--basic-dark);
 }
 
@@ -243,8 +262,14 @@ color: var(--basic-black);
 }
 
 .footer-socials {
+  list-style: none;
+}
+
+.footer-socials-link {
   background-color: var(--basic-half-grey);
   color: inherit;
 }
 
-.modal { display: none }
+.modal {
+  display: none;
+}
