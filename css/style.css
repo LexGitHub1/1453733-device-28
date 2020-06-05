@@ -1,3 +1,4 @@
+/* Custom */
 :root {
   --basic-black: #000000;
   --basic-dark: #363636;
@@ -13,6 +14,11 @@
   --status-fill: #f6dada;
 }
 
+
+
+
+
+/* Fonts */
 @font-face {
   font-family: "Gilroy";
   font-weight: 300;
@@ -45,6 +51,11 @@
     url("../fonts/opensanslight.woff") format("woff");
 }
 
+
+
+
+
+/* Global */
 body {
   min-width: 1200px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -75,6 +86,11 @@ a {
   overflow: hidden;
 }
 
+
+
+
+
+/* Header */
 .main-header,
 .main-header-logo-link {
   background-color: var(--special-fill);
@@ -90,14 +106,38 @@ a {
   color: var(--basic-black);
 }
 
-.nav-menu,
-.form-choice-color,
-.form-choice-option,
-.goods-sorting,
-.goods-icons,
-.goods-nav,
-.breadcrumbs-menu-list,
-.main-popular-list,
+.nav-menu {
+  list-style: none;
+}
+
+.form-choice-color {
+  list-style: none;
+}
+
+.form-choice-option {
+  list-style: none;
+}
+
+.goods-sorting {
+  list-style: none;
+}
+
+.goods-sorting-value {
+  list-style: none;
+}
+
+.goods-nav {
+  list-style: none;
+}
+
+.breadcrumbs-menu-list {
+  list-style: none;
+}
+
+.main-popular-list {
+  list-style: none;
+}
+
 .main-services-buttons {
   list-style: none;
 }
@@ -107,10 +147,8 @@ a {
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
   color: var(--basic-black);
 }
 
@@ -125,20 +163,22 @@ a {
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
   color: var(--basic-black);
 }
 
+
+
+
+
+/* Main */
 .slider-number {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 179px;
   line-height: 219px;
   text-transform: uppercase;
-
   color: var(--basic-white);
 }
 
@@ -147,7 +187,6 @@ font-family: "Gilroy", "Arial", sans-serif;
 font-weight: 800;
 font-size: 47px;
 line-height: 58px;
-
 color: var(--basic-black);
 }
 
@@ -156,10 +195,8 @@ color: var(--basic-black);
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
   color: var(--basic-black);
 }
 
@@ -168,9 +205,7 @@ color: var(--basic-black);
   font-weight: 300;
   font-size: 36px;
   line-height: 42px;
-
   letter-spacing: 0.1em;
-
   color: var(--basic-black);
 }
 
@@ -179,9 +214,7 @@ color: var(--basic-black);
   font-weight: 300;
   font-size: 13px;
   line-height: 15px;
-
   letter-spacing: 0.1em;
-
   color: var(--basic-black);
 }
 
@@ -191,7 +224,6 @@ color: var(--basic-black);
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.05em;
-
   color: var(--basic-black);
 }
 
@@ -200,9 +232,7 @@ color: var(--basic-black);
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
-
   letter-spacing: 0.2em;
-
   color: var(--basic-black);
 }
 
@@ -210,9 +240,7 @@ color: var(--basic-black);
   font-weight: 300;
   font-size: 15px;
   line-height: 28px;
-
   letter-spacing: 0.1em;
-
   color: var(--basic-black);
 }
 
@@ -222,10 +250,8 @@ color: var(--basic-black);
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
   color: var(--basic-black);
 }
 
@@ -234,7 +260,6 @@ color: var(--basic-black);
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
-
   color: var(--basic-black);
 }
 
@@ -243,7 +268,6 @@ color: var(--basic-black);
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
-
   color: var(--basic-black);
   opacity: 0.3;
   list-style: none;
@@ -254,10 +278,8 @@ color: var(--basic-black);
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
-
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
   color: var(--basic-black);
 }
 
@@ -271,7 +293,6 @@ color: var(--basic-black);
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.1em;
-
   color: var(--basic-black);
 }
 
@@ -281,7 +302,6 @@ color: var(--basic-black);
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
-
   color: var(--basic-black);
 }
 
@@ -293,18 +313,14 @@ color: var(--basic-black);
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
-
   color: var(--basic-black);
 }
 
-.goods-sorting-link-type,
-.goods-sorting-link-popular {
+.opacity {
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
-
   color: var(--basic-black);
-
   opacity: 0.3;
 }
 
@@ -314,7 +330,6 @@ color: var(--basic-black);
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.05em;
-
   color: var(--basic-black);
 }
 
@@ -323,10 +338,8 @@ color: var(--basic-black);
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
-
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
   color: var(--basic-black);
 }
 
@@ -335,12 +348,9 @@ color: var(--basic-black);
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
-
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
   color: var(--basic-black);
-
   opacity: 0.3;
 }
 
@@ -350,7 +360,6 @@ color: var(--basic-black);
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0.05em;
-
   color: var(--basic-black);
 }
 
@@ -368,7 +377,6 @@ color: var(--basic-black);
   font-weight: 300;
   font-size: 15px;
   line-height: 28px;
-
   color: var(--basic-black);
 }
 
@@ -377,7 +385,6 @@ color: var(--basic-black);
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
-
   color: var(--basic-black);
 }
 
@@ -387,13 +394,16 @@ color: var(--basic-black);
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
   color: var(--basic-black);
 }
 
+
+
+
+
+/* Footer */
 .main-footer {
   color: var(--basic-white);
   background-color: var(--basic-dark);
@@ -411,10 +421,8 @@ color: var(--basic-black);
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
-
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
   color: var(--basic-white);
 }
 
