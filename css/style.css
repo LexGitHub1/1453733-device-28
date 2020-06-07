@@ -1,4 +1,5 @@
 /* Custom */
+
 :root {
   --basic-black: #000000;
   --basic-dark: #363636;
@@ -19,6 +20,7 @@
 
 
 /* Fonts */
+
 @font-face {
   font-family: "Gilroy";
   font-weight: 300;
@@ -55,7 +57,8 @@
 
 
 
-/* Global */
+/* Common */
+
 body {
   min-width: 1200px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -91,6 +94,7 @@ a {
 
 
 /* Header */
+
 .main-header,
 .main-header-logo-link {
   background-color: var(--special-fill);
@@ -107,38 +111,6 @@ a {
 }
 
 .nav-menu {
-  list-style: none;
-}
-
-.form-choice-color {
-  list-style: none;
-}
-
-.form-choice-option {
-  list-style: none;
-}
-
-.goods-sorting {
-  list-style: none;
-}
-
-.goods-sorting-value {
-  list-style: none;
-}
-
-.goods-nav {
-  list-style: none;
-}
-
-.breadcrumbs-menu-list {
-  list-style: none;
-}
-
-.main-popular-list {
-  list-style: none;
-}
-
-.main-services-buttons {
   list-style: none;
 }
 
@@ -173,6 +145,7 @@ a {
 
 
 /* Main */
+
 .slider-number {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
@@ -227,6 +200,10 @@ color: var(--basic-black);
   color: var(--basic-black);
 }
 
+.main-popular-list {
+  list-style: none;
+}
+
 .main-services-title {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
@@ -234,6 +211,10 @@ color: var(--basic-black);
   line-height: 58px;
   letter-spacing: 0.2em;
   color: var(--basic-black);
+}
+
+.main-services-buttons {
+  list-style: none;
 }
 
 .main-services-content {
@@ -263,6 +244,10 @@ color: var(--basic-black);
   color: var(--basic-black);
 }
 
+.breadcrumbs-menu-list {
+  list-style: none;
+}
+
 .breadcrumbs-menu-link,
 .breadcrumbs-menu-item {
   font-weight: 300;
@@ -271,6 +256,10 @@ color: var(--basic-black);
   color: var(--basic-black);
   opacity: 0.3;
   list-style: none;
+}
+
+.filter-form {
+  background-color: var(--basic-grey-light);
 }
 
 .filter-title {
@@ -283,8 +272,8 @@ color: var(--basic-black);
   color: var(--basic-black);
 }
 
-.filter-form {
-  background-color: var(--basic-grey-light);
+.form-choice-color {
+  list-style: none;
 }
 
 .form-legend {
@@ -294,6 +283,10 @@ color: var(--basic-black);
   line-height: 17px;
   letter-spacing: 0.1em;
   color: var(--basic-black);
+}
+
+.form-choice-option {
+  list-style: none;
 }
 
 .min-price,
@@ -316,12 +309,20 @@ color: var(--basic-black);
   color: var(--basic-black);
 }
 
+.goods-sorting {
+  list-style: none;
+}
+
 .opacity {
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
   color: var(--basic-black);
   opacity: 0.3;
+}
+
+.goods-sorting-value {
+  list-style: none;
 }
 
 .goods-card-link {
@@ -331,6 +332,10 @@ color: var(--basic-black);
   line-height: 22px;
   letter-spacing: 0.05em;
   color: var(--basic-black);
+}
+
+.goods-nav {
+  list-style: none;
 }
 
 .goods-nav-link {
@@ -404,6 +409,7 @@ color: var(--basic-black);
 
 
 /* Footer */
+
 .main-footer {
   color: var(--basic-white);
   background-color: var(--basic-dark);
