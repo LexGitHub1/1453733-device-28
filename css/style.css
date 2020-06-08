@@ -89,6 +89,15 @@ a {
   overflow: hidden;
 }
 
+.hover-effect:hover {
+  background-color: var(--special-yellow-dark);
+}
+
+.hover-effect:active {
+  background-color: var(--basic-black);
+  color: var(--special-fill);
+}
+
 
 
 
