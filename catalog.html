@@ -49,10 +49,10 @@
 
     <main>
       <section class="breadcrumbs-menu">
-        <h1 class="breadcrumbs-menu-title">Моноподы для селфи</h1>
+        <h1 class="page-title">Моноподы для селфи</h1>
           <ul class="breadcrumbs-menu-list">
             <li><a class="breadcrumbs-menu-link" href="blank.html">Главная</a></li>
-            <li><a class="breadcrumbs-menu-link" href="blank.html">Каталог товаров</a></li>
+            <li><a class="breadcrumbs-menu-link-catalog" href="blank.html">Каталог товаров</a></li>
             <li class="breadcrumbs-menu-item">Моноподы для селфи</li>
           </ul>
       </section>
@@ -128,18 +128,18 @@
       <div>
         <p class="filter-title">Сортировка:</p>
           <ul class="goods-sorting">
-            <li><a class="goods-sorting-link" href="blank.html">По цене</a></li>
-            <li><a class="goods-sorting-link opacity" href="blank.html">По типу</a></li>
-            <li><a class="goods-sorting-link opacity" href="blank.html">По популярности</a></li>
+            <li><a class="goods-sorting-link-active" href="blank.html">По цене</a></li>
+            <li><a class="goods-sorting-link" href="blank.html">По типу</a></li>
+            <li><a class="goods-sorting-link" href="blank.html">По популярности</a></li>
           </ul>
           <ul class="goods-sorting-value">
             <li>
-              <a href="blank.html" title="Вверх">
+              <a class="goods-sorting-value-link" href="blank.html" title="Вверх">
                 <span class="visually-hidden">Сортировка товаров "сначала самые высокие в выбранной категории"</span>
               </a>
             </li>
             <li>
-              <a href="blank.html" title="Вниз">
+              <a class="goods-sorting-value-link" href="blank.html" title="Вниз">
                 <span class="visually-hidden">Сортировка товаров "сначала самые низкие в выбранной категории"</span>
               </a>
             </li>
@@ -153,6 +153,8 @@
           <span class="goods-card-content-price">500 руб.</span>
         </p>
         <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+        <a class="goods-card-link-cart" href="blank.html">В корзину</a>
+        <a class="goods-card-link-compare" href="blank.html">Добавить к сравнению</a>
       </article>
 
       <article class="goods-card">
@@ -162,6 +164,8 @@
           <span class="goods-card-content-price">1500 руб.</span>
         </p>
         <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+        <a class="goods-card-link-cart" href="blank.html">В корзину</a>
+        <a class="goods-card-link-compare" href="blank.html">Добавить к сравнению</a>
       </article>
 
       <article class="goods-card">
@@ -171,6 +175,8 @@
           <span class="goods-card-content-price">2500 руб.</span>
         </p>
         <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+        <a class="goods-card-link-cart" href="blank.html">В корзину</a>
+        <a class="goods-card-link-compare" href="blank.html">Добавить к сравнению</a>
       </article>
 
       <article class="goods-card">
@@ -180,23 +186,25 @@
           <span class="goods-card-content-price">4900 руб.</span>
         </p>
         <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
+        <a class="goods-card-link-cart" href="blank.html">В корзину</a>
+        <a class="goods-card-link-compare" href="blank.html">Добавить к сравнению</a>
       </article>
 
       <div>
         <ul class="goods-nav">
-          <li><a class="goods-nav-link" href="blank.html">Вперёд</a></li>
-          <li><a class="goods-nav-link" href="blank.html">1</a></li>
-          <li><a class="goods-nav-link-shadow" href="blank.html">2</a></li>
-          <li><a class="goods-nav-link-shadow" href="blank.html">3</a></li>
-          <li><a class="goods-nav-link" href="blank.html">Назад</a></li>
+          <li><a class="goods-nav-link-forward" href="blank.html">Вперёд</a></li>
+          <li><a class="goods-nav-link-active" href="blank.html">1</a></li>
+          <li><a class="goods-nav-link-not-active" href="blank.html">2</a></li>
+          <li><a class="goods-nav-link-not-active" href="blank.html">3</a></li>
+          <li><a class="goods-nav-link-back" href="blank.html">Назад</a></li>
         </ul>
       </div>
     </main>
 
     <footer class="main-footer">
       <nav>
-        <a class="footer-logo-link" href="index.html">
-          <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
+        <a class="main-footer-logo-link" href="index.html">
+          <img src="img/logo-device-yellow.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
         </a>
         <ul class="nav-menu">
           <li><a class="footer-user-enter" href="blank.html">Валентин Петухов</a></li>
@@ -212,12 +220,12 @@
           <li><a class="footer-services-link" href="blank.html">Контакты</a></li>
         </ul>
       </nav>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="logo-html-link" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/logo-html.svg" width="27" height="34" alt="Логотип HTML Academy">
       </a>
       <p class="footer-content">г. Москва, ул. Строителей, 15</p>
       <p><a class="footer-content" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
-      <ul class="footer-socials">
+      <ul class="footer-socials-list">
         <li><a class="footer-socials-link" href="#">Facebook</a></li>
         <li><a class="footer-socials-link" href="#">Instagram</a></li>
         <li><a class="footer-socials-link" href="#">Twitter</a></li>
