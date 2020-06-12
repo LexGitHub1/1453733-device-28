@@ -478,6 +478,18 @@ a {
   gap: 20px;
 }
 
+.goods-card {
+  margin-left: auto;
+  margin-right: auto;
+  width: 360px;
+}
+
+.goods-nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 100px;
+}
+
 .catalog-form-wrapper {
   display: flex;
   justify-content: flex-end;
