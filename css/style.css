@@ -218,7 +218,6 @@ a {
   height: 35px;
 }
 
-
 .main-header-logo-link:hover {
   opacity: 0.6;
 }
@@ -468,13 +467,15 @@ a {
 }
 
 .catalog-content-wrapper {
-  display: flex;
-  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1160px;
 }
 
 .catalog-content {
-  width: 832px;
-  min-height: 200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .catalog-form-wrapper {
@@ -661,10 +662,8 @@ a {
 }
 
 .company-wrapper {
-  /* только для демо */
   margin-left: auto;
   margin-right: auto;
-  /* --------------- */
   width: 1160px;
 }
 
