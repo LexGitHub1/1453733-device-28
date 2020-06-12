@@ -9,57 +9,56 @@
 </head>
 
 <body class="page-body">
+  <div class="container">
+    <header class="main-header">
+      <div class="header-inner">
+        <nav class="main-nav">
+          <div class="logo-container">
+            <a class="main-header-logo-link" title="Главная страница">
+              <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
+            </a>
+          </div>
 
-  <header class="main-header container">
-    <nav class="main-nav">
-      <div class="logo-container">
-        <a class="main-header-logo-link" title="Главная страница">
-          <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
-        </a>
-      </div>
+          <div class="search-container">
+            <form action="https://echo.htmlacademy.ru" method="GET">
+              <p class="nav-search">
+                <label class="visually-hidden" for="search">Поиск по сайту</label>
+                <input id="search" type="search" name="search" placeholder="Поиск по сайту">
+              </p>
+              <button class="nav-search-button" type="submit">Найти</button>
+            </form>
 
-      <div class="search-container">
-        <form action="https://echo.htmlacademy.ru" method="GET">
-          <p class="nav-search">
-            <label class="visually-hidden" for="search">Поиск по сайту</label>
-            <input id="search" type="search" name="search" placeholder="Поиск по сайту">
-          </p>
-          <button class="nav-search-button" type="submit">Найти</button>
-        </form>
-      </div>
-
-      <div class="nav-menu-container">
-        <ul class="nav-menu">
-          <li><a class="nav-menu-link" href="blank.html">Войти</a></li>
-          <li><a class="nav-menu-link" href="blank.html">Сравнить</a></li>
-          <li><a class="nav-menu-link" href="blank.html">Корзина</a></li>
-        </ul>
-      </div>
-
-      <div class="main-menu-container">
-        <ul class="main-menu">
-          <li><a class="main-menu-link" href="catalog.html">Каталог товаров</a>
-            <ul class="main-submenu">
-              <li><a class="main-submenu-link" href="blank.html">Виртуальная реальность</a></li>
-              <li><a class="main-submenu-link" href="blank.html">Моноподы для селфи</a></li>
-              <li><a class="main-submenu-link" href="blank.html">Экшн-камеры</a></li>
-              <li><a class="main-submenu-link" href="blank.html">Фитнес-браслеты</a></li>
-              <li><a class="main-submenu-link" href="blank.html">Умные часы</a></li>
-              <li><a class="main-submenu-link" href="blank.html">Квадрокоптер</a></li>
+            <ul class="nav-menu">
+              <li><a class="nav-menu-link" href="blank.html">Войти</a></li>
+              <li><a class="nav-menu-link" href="blank.html">Сравнить</a></li>
+              <li><a class="nav-menu-link" href="blank.html">Корзина</a></li>
             </ul>
-          </li>
-          <li><a class="header-services-link" href="blank.html">Доставка</a></li>
-          <li><a class="header-services-link" href="blank.html">Гарантия</a></li>
-          <li><a class="header-services-link" href="blank.html">Контакты</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+          </div>
 
-  <main class="main-content container">
+          <ul class="main-menu">
+            <li><a class="main-menu-link" href="catalog.html">Каталог товаров</a>
+              <ul class="main-submenu visually-hidden">
+                <li><a class="main-submenu-link" href="blank.html">Виртуальная реальность</a></li>
+                <li><a class="main-submenu-link" href="blank.html">Моноподы для селфи</a></li>
+                <li><a class="main-submenu-link" href="blank.html">Экшн-камеры</a></li>
+                <li><a class="main-submenu-link" href="blank.html">Фитнес-браслеты</a></li>
+                <li><a class="main-submenu-link" href="blank.html">Умные часы</a></li>
+                <li><a class="main-submenu-link" href="blank.html">Квадрокоптер</a></li>
+              </ul>
+            </li>
+            <li><a class="header-services-link" href="blank.html">Доставка</a></li>
+            <li><a class="header-services-link" href="blank.html">Гарантия</a></li>
+            <li><a class="header-services-link" href="blank.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <main class="main-content">
     <h1 class="visually-hidden">интернет магазин device</h1>
 
-    <div class="main-slider">
+    <div class="main-slider container">
 
       <section class="slider-section">
         <h2 class="visually-hidden">Слайдер 1</h2>
@@ -138,7 +137,7 @@
       </button>
     </div>
 
-    <section class="main-popular">
+    <section class="main-popular container">
       <h2 class="visually-hidden">Популярное</h2>
 
       <ul class="main-popular-list">
@@ -152,35 +151,37 @@
     </section>
 
     <div class="main-services">
-      <section>
-        <h2 class="main-services-title">Доставка</h2>
+      <div class="container">
+        <section>
+          <h2 class="main-services-title">Доставка</h2>
 
-        <p class="main-services-content">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
-          бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-      </section>
+          <p class="main-services-content">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+            бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </section>
 
-      <section>
-        <h2 class="main-services-title">Гарантия</h2>
+        <section>
+          <h2 class="main-services-title">Гарантия</h2>
 
-        <p class="main-services-content">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
-          переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-      </section>
+          <p class="main-services-content">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
+            переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+        </section>
 
-      <section>
-        <h2 class="main-services-title">Кредит</h2>
+        <section>
+          <h2 class="main-services-title">Кредит</h2>
 
-        <p class="main-services-content">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
-          наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-      </section>
+          <p class="main-services-content">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+            наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+        </section>
 
-      <ul class="main-services-buttons">
-        <li><button class="button main-services-buttons-item" type="button">Доставка</button></li>
-        <li><button class="button main-services-buttons-item" type="button">Гарантия</button></li>
-        <li><button class="button main-services-buttons-item" type="button">Кредит</button></li>
-      </ul>
+        <ul class="main-services-buttons">
+          <li><button class="button main-services-buttons-item" type="button">Доставка</button></li>
+          <li><button class="button main-services-buttons-item" type="button">Гарантия</button></li>
+          <li><button class="button main-services-buttons-item" type="button">Кредит</button></li>
+        </ul>
+      </div>
     </div>
 
-    <section class="main-logotypes">
+    <section class="main-logotypes container">
       <h2 class="visually-hidden">Логотипы компаний-партнеров</h2>
 
       <a href="blank.html">
@@ -197,39 +198,32 @@
       </a>
     </section>
 
-    <div class="company-wrapper">
-      <div class="company">
-        <section class="main-info">
-          <h2 class="main-info-title">О нас</h2>
+    <div class="company container">
+      <section class="main-info">
+        <h2 class="main-info-title">О нас</h2>
 
-          <div class="main-info-content">
-            <p class="main-info-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
-            </p>
-            <p class="main-info-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со
-              многими транспортными компаниями:</p>
-            <ul class="transport-company">
-              <li>Деловые линии</li>
-              <li>Автотрейдинг</li>
-              <li>ЖелДорЭкспедиция</li>
-            </ul>
-            <a class="main-info-link" href="blank.html">Подробнее о нас</a>
-          </div>
-        </section>
+        <p class="main-info-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+        </p>
+        <p class="main-info-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со
+          многими транспортными компаниями:</p>
+        <ul class="transport-company">
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a class="main-info-link" href="blank.html">Подробнее о нас</a>
+      </section>
 
-        <section class="main-contacts">
-          <header>
-            <h2 class="main-contacts-title">Контакты</h2>
-          </header>
-          <div class="main-contacts-content">
-            <p class="main-contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
-              работоспособность покупки. Всякое бывает.</p>
-            <a href="blank.html">
-              <img src="img/map-1.png" width="560" height="220" alt="Карта офиса по адресу улица Строителей, 15">
-            </a>
-            <a class="main-contacts-link" href="blank.html">Напишите нам</a>
-          </div>
-        </section>
-      </div>
+      <section class="main-contacts">
+        <h2 class="main-contacts-title">Контакты</h2>
+
+        <p class="main-contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
+          работоспособность покупки. Всякое бывает.</p>
+        <a href="blank.html">
+          <img src="img/map-1.png" width="560" height="220" alt="Карта офиса по адресу улица Строителей, 15">
+        </a>
+        <a class="main-contacts-link" href="blank.html">Напишите нам</a>
+      </section>
     </div>
   </main>
 
@@ -242,7 +236,7 @@
           </a>
         </div>
 
-        <div class="nav-menu-container">
+        <div class="search-container">
           <ul class="nav-menu">
             <li><a class="footer-user-enter" href="blank.html">Войти</a></li>
           </ul>
@@ -251,25 +245,30 @@
             <li><a class="footer-user-cart" href="blank.html">Корзина</a></li>
           </ul>
         </div>
+
         <div class="main-menu-container">
+          <p class="footer-content">г. Москва, ул. Строителей, 15</p>
           <ul class="nav-menu">
             <li><a class="footer-services-link" href="blank.html">Доставка</a></li>
             <li><a class="footer-services-link" href="blank.html">Гарантия</a></li>
             <li><a class="footer-services-link" href="blank.html">Контакты</a></li>
           </ul>
+          <p>
+            <a class="footer-content" href="tel:+74954959595">+7 (495) 495-95-95</a>
+          </p>
         </div>
       </nav>
-      <div class="footer-socials-container"></div>
-      <a class="logo-html-link" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-html.svg" width="27" height="34" alt="Логотип HTML Academy">
-      </a>
-      <p class="footer-content">г. Москва, ул. Строителей, 15</p>
-      <p><a class="footer-content" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
-      <ul class="footer-socials-list">
-        <li><a class="footer-socials-link" href="#">Facebook</a></li>
-        <li><a class="footer-socials-link" href="#">Instagram</a></li>
-        <li><a class="footer-socials-link" href="#">Twitter</a></li>
-      </ul>
+
+      <div class="footer-socials-container">
+        <a class="logo-html-link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-html.svg" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
+        <ul class="footer-socials-list">
+          <li><a class="footer-socials-link" href="#">Facebook</a></li>
+          <li><a class="footer-socials-link" href="#">Instagram</a></li>
+          <li><a class="footer-socials-link" href="#">Twitter</a></li>
+        </ul>
+      </div>
     </div>
   </footer>
 
