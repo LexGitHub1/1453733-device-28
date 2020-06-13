@@ -107,6 +107,12 @@ a {
   overflow: hidden;
 }
 
+
+
+
+
+/* Flex & Grid */
+
 .page {
   height: 100%;
 }
@@ -119,60 +125,74 @@ a {
 }
 
 .container {
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 40px;
 }
 
+.main-header {
+  display: block;
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: var(--special-fill);
+}
 
+.main-content {
+  display: block;
+  margin-bottom: 86px;
+}
 
+.main-footer {
+  display: block;
+  padding-top: 46px;
+  padding-bottom: 63px;
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var(--basic-dark);
+}
 
-
-/* Header */
+.main-nav {
+  width: 1040px;
+}
 
 .logo-container {
   display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
+  justify-content: start;
   width: 163px;
-  text-align: left;
 }
 
 .search-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  box-sizing: content-box;
-  width: 1160px;
-  text-align: right;
+  justify-content: space-between;
+  width: 1040px;
 }
 
 .nav-menu {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  box-sizing: border-box;
-  width: 500px;
-  text-align: left;
 }
 
 .main-menu {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  box-sizing: border-box;
+  justify-content: space-between;
   width: 1040px;
-  text-align: left;
 }
 
 .main-menu-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  width: 1160px;
-  text-align: center;
 }
+
+.footer-socials-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  width: 1040px;
+}
+
+
+
+/* Header */
 
 .nav-menu-link {
   padding: 25px 0;
@@ -202,18 +222,6 @@ a {
   width: 163px;
   height: 35px;
   display: block;
-}
-
-.main-header {
-  background-color: var(--special-fill);
-  padding-top: 20px;
-  width: 1160px;
-}
-
-.header__inner {
-  width: 1160px;
-  padding-left: 60px;
-  padding-right: 60px;
 }
 
 .main-header-logo-link {
@@ -722,12 +730,6 @@ a {
 
 /* Footer */
 
-.main-footer {
-  color: var(--basic-white);
-  background-color: var(--basic-dark);
-  /* grid-area: footer; */
-  min-height: 100px;
-}
 
 .main-footer-logo-link:hover {
   opacity: 0.6;
