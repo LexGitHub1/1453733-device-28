@@ -130,19 +130,16 @@ a {
 }
 
 .main-header {
-  display: block;
   margin-bottom: 50px;
   text-align: center;
   background-color: var(--special-fill);
 }
 
 .main-content {
-  display: block;
   margin-bottom: 86px;
 }
 
 .main-footer {
-  display: block;
   padding-top: 46px;
   padding-bottom: 63px;
   text-align: center;
@@ -150,47 +147,51 @@ a {
   background-color: var(--basic-dark);
 }
 
-.main-nav {
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .logo-container {
   display: flex;
   width: 163px;
+  margin-left: 60px;
 }
 
 .search-container {
   display: flex;
-  justify-content: space-between;
-  width: 1040px;
+  padding: 0px;
 }
 
 .nav-search {
-  display: flex;
-  width: 144px;
-  padding-right: 396px;
+  margin-right: 396px;
+  margin-left: 60px;
+}
+
+.option-compare{
+  margin-left: 204px;
+}
+
+.option-cart{
+  margin-left: 28px;
 }
 
 .nav-menu {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  padding: 0px;
 }
 
 .main-menu {
   display: flex;
-  justify-content: space-between;
-  width: 1040px;
+  padding: 0px;
 }
 
-.main-menu-container {
-  display: flex;
-  justify-content: space-between;
-  width: 1160px;
+.option-catalog {
+  margin-right: 349px;
+  margin-left: 60px;
+}
+
+.option-warranty {
+  margin-left: 38px;
+}
+
+.option-contacts {
+  margin-left: 111px;
 }
 
 .footer-socials-container {
@@ -497,7 +498,6 @@ a {
 }
 
 .goods-card {
-  position: relative;
   width: 360px;
   padding: 20px;
 }
