@@ -56,113 +56,120 @@
   </header>
 
   <main class="main-content">
-    <div class="container">
-      <section class="breadcrumbs-menu">
-        <h1 class="page-title">Моноподы для селфи</h1>
-        <ul class="breadcrumbs-menu-list">
-          <li><a class="breadcrumbs-menu-link" href="blank.html">Главная</a></li>
-          <li><a class="breadcrumbs-menu-link-catalog" href="blank.html">Каталог товаров</a></li>
-          <li class="breadcrumbs-menu-item">Моноподы для селфи</li>
-        </ul>
-      </section>
 
-      <div class="catalog-wrapper">
-        <div class="catalog-left-side-wrapper">
-          <section>
-            <div class="catalog-form-header-wrapper">
-              <div class="catalog-form-header">
-                <h3 class="filter-title">Фильтр:</h3>
-              </div>
-            </div>
+    <section class="breadcrumbs-menu container">
+      <h1 class="page-title">Моноподы для селфи</h1>
+      <ul class="breadcrumbs-menu-list">
+        <li><a class="breadcrumbs-menu-link" href="blank.html">Главная</a></li>
+        <li><a class="breadcrumbs-menu-link-catalog" href="blank.html">Каталог товаров</a></li>
+        <li class="breadcrumbs-menu-item">Моноподы для селфи</li>
+      </ul>
+    </section>
 
-            <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
-              <fieldset class="filter-item">
-                <legend class="form-legend">Стоимость</legend>
-                <div class="range-filter">
-                  <div class="range-controls">
-                    <div class="scale">
-                      <div class="bar"></div>
-                    </div>
-                    <button type="button" name="min-value"></button>
-                    <button type="button" name="max-value"></button>
-                  </div>
-                  <div class="price-controls">
-                    <label class="min-price">
-                      от <input type="text" name="min-price" value="0">
-                    </label>
-                    <label class="max-price">
-                      до <input type="text" name="max-price" value="5000">
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
-
-              <fieldset>
-                <legend class="form-legend">Цвета</legend>
-                <ul class="form-choice-color">
-                  <li class="form-content">
-                    <input type="checkbox" name="color-choice" id="filter-color-black" checked>
-                    <label for="filter-color-black">Чёрный</label>
-                  </li>
-                  <li class="form-content">
-                    <input type="checkbox" name="color-choice" id="filter-color-white">
-                    <label for="filter-color-white">Белый</label>
-                  </li>
-                  <li class="form-content">
-                    <input type="checkbox" name="color-choice" id="filter-color-blue" checked>
-                    <label for="filter-color-blue">Синий</label>
-                  </li>
-                  <li class="form-content">
-                    <input type="checkbox" name="color-choice" id="filter-color-red" checked>
-                    <label for="filter-color-red">Красный</label>
-                  </li>
-                  <li class="form-content">
-                    <input type="checkbox" name="color-choice" id="filter-color-pink">
-                    <label for="filter-color-pink">Розовый</label>
-                  </li>
-                </ul>
-              </fieldset>
-
-              <fieldset>
-                <legend class="form-legend">Bluetooth</legend>
-                <ul class="form-choice-option">
-                  <li class="form-content">
-                    <input type="radio" name="option-choice" value="have-bluetooth" id="filter-have" checked>
-                    <label for="filter-have">Есть</label>
-                  </li>
-                  <li class="form-content">
-                    <input type="radio" name="option-choice" value="dont-have-bluetooth" id="filter-dont-have">
-                    <label for="filter-dont-have">Нет</label>
-                  </li>
-                </ul>
-              </fieldset>
-              <button class="button filter-buttons-item" type="submit">Показать</button>
-            </form>
-          </section>
+    <div class="catalog-wrapper">
+      <div class="catalog-left-side-wrapper">
+        <div class="catalog-form-header-wrapper ">
+          <div class="catalog-form-header">
+            <h3 class="filter-title">Фильтр:</h3>
+          </div>
         </div>
 
-        <div class="catalog-right-side-wrapper">
+        <div class="catalog-form-wrapper">
+          <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
+            <fieldset class="filter-item">
+              <legend class="form-legend">Стоимость</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <button type="button" name="min-value"></button>
+                  <button type="button" name="max-value"></button>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="text" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до <input type="text" name="max-price" value="5000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend class="form-legend">Цвета</legend>
+              <ul class="form-choice-color">
+                <li class="form-content">
+                  <input type="checkbox" name="color-choice" id="filter-color-black" checked>
+                  <label for="filter-color-black">Чёрный</label>
+                </li>
+                <li class="form-content">
+                  <input type="checkbox" name="color-choice" id="filter-color-white">
+                  <label for="filter-color-white">Белый</label>
+                </li>
+                <li class="form-content">
+                  <input type="checkbox" name="color-choice" id="filter-color-blue" checked>
+                  <label for="filter-color-blue">Синий</label>
+                </li>
+                <li class="form-content">
+                  <input type="checkbox" name="color-choice" id="filter-color-red" checked>
+                  <label for="filter-color-red">Красный</label>
+                </li>
+                <li class="form-content">
+                  <input type="checkbox" name="color-choice" id="filter-color-pink">
+                  <label for="filter-color-pink">Розовый</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset>
+              <legend class="form-legend">Bluetooth</legend>
+              <ul class="form-choice-option">
+                <li class="form-content">
+                  <input type="radio" name="option-choice" value="have-bluetooth" id="filter-have" checked>
+                  <label for="filter-have">Есть</label>
+                </li>
+                <li class="form-content">
+                  <input type="radio" name="option-choice" value="dont-have-bluetooth" id="filter-dont-have">
+                  <label for="filter-dont-have">Нет</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button filter-buttons-item" type="submit">Показать</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="catalog-right-side-wrapper">
+        <div class="catalog-content-header-wrapper">
           <div class="catalog-content-header">
-            <p class="filter-title">Сортировка:</p>
+            <h3 class="filter-title option-catalog-filter">Сортировка:</h3>
+
             <ul class="goods-sorting">
               <li><a class="goods-sorting-link-active" href="blank.html">По цене</a></li>
               <li><a class="goods-sorting-link" href="blank.html">По типу</a></li>
               <li><a class="goods-sorting-link" href="blank.html">По популярности</a></li>
             </ul>
+
             <ul class="goods-sorting-value">
               <li>
                 <a class="goods-sorting-value-link" href="blank.html" title="Вверх">
-                  <span class="visually-hidden">Сортировка товаров "сначала самые высокие в выбранной категории"</span>
+                  <span class="visually-hidden">Сортировка товаров "сначала самые высокие в выбранной
+                    категории"</span>
                 </a>
               </li>
               <li>
                 <a class="goods-sorting-value-link" href="blank.html" title="Вниз">
-                  <span class="visually-hidden">Сортировка товаров "сначала самые низкие в выбранной категории"</span>
+                  <span class="visually-hidden">Сортировка товаров "сначала самые низкие в выбранной
+                    категории"</span>
                 </a>
               </li>
             </ul>
           </div>
+        </div>
 
+        <div class="catalog-content-wrapper">
           <div class="catalog-content">
             <article class="goods-card">
               <h4 class="visually-hidden">Любительская селфи-палка</h4>
@@ -172,8 +179,8 @@
                 <span class="goods-card-content-price">500 руб.</span>
               </p>
 
-              <a class="goods-card-link-cart" href="blank.html">В корзину</a>
-              <a class="goods-card-link-compare" href="blank.html">Добавить к сравнению</a>
+              <a class="goods-card-link-cart visually-hidden" href="blank.html">В корзину</a>
+              <a class="goods-card-link-compare visually-hidden" href="blank.html">Добавить к сравнению</a>
             </article>
 
             <article class="goods-card">
@@ -184,8 +191,8 @@
                 <span class="goods-card-content-price">1500 руб.</span>
               </p>
 
-              <a class="goods-card-link-cart" href="blank.html">В корзину</a>
-              <a class="goods-card-link-compare" href="blank.html">Добавить к сравнению</a>
+              <a class="goods-card-link-cart visually-hidden" href="blank.html">В корзину</a>
+              <a class="goods-card-link-compare visually-hidden" href="blank.html">Добавить к сравнению</a>
             </article>
 
             <article class="goods-card">
@@ -196,8 +203,8 @@
                 <span class="goods-card-content-price">2500 руб.</span>
               </p>
 
-              <a class="goods-card-link-cart" href="blank.html">В корзину</a>
-              <a class="goods-card-link-compare" href="blank.html">Добавить к сравнению</a>
+              <a class="goods-card-link-cart visually-hidden" href="blank.html">В корзину</a>
+              <a class="goods-card-link-compare visually-hidden" href="blank.html">Добавить к сравнению</a>
             </article>
 
             <article class="goods-card">
@@ -208,18 +215,18 @@
                 <span class="goods-card-content-price">4900 руб.</span>
               </p>
 
-              <a class="goods-card-link-cart" href="blank.html">В корзину</a>
-              <a class="goods-card-link-compare" href="blank.html">Добавить к сравнению</a>
+              <a class="goods-card-link-cart visually-hidden" href="blank.html">В корзину</a>
+              <a class="goods-card-link-compare visually-hidden" href="blank.html">Добавить к сравнению</a>
             </article>
-          </div>
 
-          <ul class="goods-nav">
-            <li><a class="goods-nav-link-forward" href="blank.html">Вперёд</a></li>
-            <li><a class="goods-nav-link-active" href="blank.html">1</a></li>
-            <li><a class="goods-nav-link-not-active" href="blank.html">2</a></li>
-            <li><a class="goods-nav-link-not-active" href="blank.html">3</a></li>
-            <li><a class="goods-nav-link-back" href="blank.html">Назад</a></li>
-          </ul>
+            <ul class="goods-nav">
+              <li><a class="goods-nav-link-forward" href="blank.html">Вперёд</a></li>
+              <li><a class="goods-nav-link-active" href="blank.html">1</a></li>
+              <li><a class="goods-nav-link-not-active" href="blank.html">2</a></li>
+              <li><a class="goods-nav-link-not-active" href="blank.html">3</a></li>
+              <li><a class="goods-nav-link-back" href="blank.html">Назад</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

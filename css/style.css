@@ -7,23 +7,18 @@
   --basic-half-grey: #7e7e7e;
   --basic-grey-light: #e5e5e5;
   --basic-white: #ffffff;
-
   --special-yellow-dark: #f0c52e;
   --special-yellow-icons: #FFC600;
   --special-green: #91c92f;
-
   --special-fill: #f7e296;
   --status-fill: #f6dada;
-
   --special-dark: rgba(0, 0, 0, 0.6);
   --special-black-popup: rgba(0, 0, 0, 0.4);
   --special-dark-light: rgba(0, 0, 0, 0.3);
-
   --special-white: rgba(255, 255, 255, 0.7);
   --special-white-light: rgba(255, 255, 255, 0.6);
   --special-white-lighter: rgba(255, 255, 255, 0.3);
   --special-white-lightest: rgba(255, 255, 255, 0.1);
-
   --special-grey-dark: #DCDCDC;
   --special-grey-light: #EBEBEB;
   --special-grey-pin: #C4C4C4;
@@ -33,47 +28,31 @@
   --special-grey-popup-dark: #EAEAEA;
 }
 
-
-
-
-
 /* Fonts */
 
 @font-face {
   font-family: "Gilroy";
   font-weight: 300;
-  src:
-    url("../fonts/gilroylight.woff2") format("woff2"),
-    url("../fonts/gilroylight.woff") format("woff");
+  src: url("../fonts/gilroylight.woff2") format("woff2"), url("../fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
   font-family: "Gilroy";
   font-weight: 800;
-  src:
-    url("../fonts/gilroyextrabold.woff2") format("woff2"),
-    url("../fonts/gilroyextrabold.woff") format("woff");
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-weight: 400;
-  src:
-    url("../fonts/opensans.woff2") format("woff2"),
-    url("../fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-weight: 300;
-  src:
-    url("../fonts/opensanslight.woff2") format("woff2"),
-    url("../fonts/opensanslight.woff") format("woff");
+  src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
 }
-
-
-
-
 
 /* Common */
 
@@ -107,10 +86,6 @@ a {
   overflow: hidden;
 }
 
-
-
-
-
 /* Flex & Grid */
 
 .page {
@@ -130,7 +105,7 @@ a {
 }
 
 .main-header {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   text-align: center;
   background-color: var(--special-fill);
   min-height: 300px;
@@ -141,7 +116,7 @@ a {
 }
 
 .main-footer {
-   padding-top: 46px;
+  padding-top: 46px;
   /* padding-bottom: 63px; */
   text-align: center;
   color: var(--basic-white);
@@ -306,6 +281,100 @@ a {
   margin-left: 62px;
 }
 
+/* .option-crumbs {
+  display: flex;
+} */
+
+.breadcrumbs-menu-list {
+  display: flex;
+  list-style: none;
+}
+
+.breadcrumbs-menu-link {
+  margin-left: 22px;
+}
+
+.breadcrumbs-menu-link-catalog {
+  margin-left: 40px;
+}
+
+.breadcrumbs-menu-item {
+  margin-left: 40px;
+}
+
+.catalog-wrapper {
+  display: flex;
+}
+
+.catalog-left-side-wrapper, .catalog-right-side-wrapper {
+  flex-grow: 1;
+}
+
+.catalog-form-header-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--special-grey-dark);
+}
+
+.catalog-form-header {
+  width: 368px;
+  min-height: 70px;
+}
+
+.catalog-form-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #efefef;
+  height: 100%;
+}
+
+.catalog-form {
+  width: 328px;
+  min-height: 200px;
+}
+
+.catalog-content-header-wrapper {
+  display: flex;
+  background-color: #ebebeb;
+}
+
+.catalog-content-header {
+  display: flex;
+  width: 832px;
+  min-height: 70px;
+}
+
+.option-catalog-filter {
+  margin-left: 72px;
+}
+
+.catalog-content-wrapper {
+  display: flex;
+  background-color: #ffffff;
+}
+
+.catalog-content {
+  display: grid;
+  grid-template-columns: 360px 360px;
+  grid-gap: 40px;
+  width: 832px;
+  min-height: 200px;
+}
+
+.goods-card {
+  width: 360px;
+  min-height: 454px;
+}
+
+.goods-nav {
+  display: flex;
+}
+
+.goods-sorting {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
 
 /* Header */
 
@@ -352,8 +421,7 @@ a {
   opacity: 0.3;
 }
 
-.nav-search,
-.nav-menu-link-out {
+.nav-search, .nav-menu-link-out {
   color: var(--basic-half-grey);
 }
 
@@ -362,18 +430,15 @@ a {
   color: var(--basic-black);
 }
 
-.nav-menu-link,
-.main-submenu-link {
+.nav-menu-link, .main-submenu-link {
   color: var(--basic-black);
 }
 
-.nav-menu-link:hover,
-.main-submenu-link:hover {
+.nav-menu-link:hover, .main-submenu-link:hover {
   opacity: 0.6;
 }
 
-.nav-menu-link:active,
-.main-submenu-link:active {
+.nav-menu-link:active, .main-submenu-link:active {
   opacity: 0.3;
 }
 
@@ -399,8 +464,7 @@ a {
   opacity: 0.3;
 }
 
-.main-menu,
-.main-submenu {
+.main-menu, .main-submenu {
   list-style: none;
   color: var(--basic-black);
 }
@@ -422,10 +486,6 @@ a {
 .header-services-link:active {
   opacity: 0.3;
 }
-
-
-
-
 
 /* Main */
 
@@ -520,8 +580,7 @@ a {
   color: var(--basic-black);
 }
 
-.main-services-buttons-item,
-.filter-buttons-item {
+.main-services-buttons-item, .filter-buttons-item {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -537,21 +596,12 @@ a {
   font-size: 47px;
   line-height: 58px;
   color: var(--basic-black);
+  margin-left: 60px;
+  margin-top: 44px;
+  margin-bottom: 30px;
 }
 
-.breadcrumbs-menu-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-sizing: border-box;
-  width: 385px;
-  text-align: left;
-  list-style: none;
-}
-
-.breadcrumbs-menu-link,
-.breadcrumbs-menu-link-catalog,
-.breadcrumbs-menu-item {
+.breadcrumbs-menu-link, .breadcrumbs-menu-link-catalog, .breadcrumbs-menu-item {
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
@@ -566,65 +616,6 @@ a {
 
 .breadcrumbs-menu-link-catalog:active {
   opacity: 0.1;
-}
-
-.catalog-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.catalog-left-side-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-}
-
-.catalog-form-header-wrapper {
-  display: flex;
-  justify-content: flex-end;
-  background-color: #dcdcdc;
-}
-
-.catalog-content-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: var(--special-grey-light);
-}
-
-.catalog-content {
-  display: grid;
-  grid-template-columns: 360px 360px;
-  gap: 40px;
-  padding-top: 70px;
-}
-
-.goods-card {
-  width: 360px;
-  padding: 20px;
-}
-
-.goods-nav {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 100px;
-}
-
-.catalog-form-wrapper {
-  display: flex;
-  justify-content: flex-end;
-  background-color: #efefef;
-}
-
-.catalog-form {
-  width: 328px;
-  min-height: 200px;
-}
-
-.filter-form {
-  padding-top: 70px;
-  background-color: var(--basic-grey-light);
-  height: 100%;
 }
 
 .filter-title {
@@ -654,8 +645,7 @@ a {
   list-style: none;
 }
 
-.min-price,
-.max-price {
+.min-price, .max-price {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -690,12 +680,6 @@ a {
   opacity: 0.3;
 }
 
-.goods-sorting {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-}
-
 .goods-sorting-value {
   list-style: none;
 }
@@ -715,8 +699,7 @@ a {
   list-style: none;
 }
 
-.goods-nav-link-forward,
-.goods-nav-link-back {
+.goods-nav-link-forward, .goods-nav-link-back {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -726,8 +709,7 @@ a {
   color: var(--basic-black);
 }
 
-.goods-nav-link-forward:active,
-.goods-nav-link-back:active {
+.goods-nav-link-forward:active, .goods-nav-link-back:active {
   opacity: 0.3;
 }
 
@@ -799,8 +781,7 @@ a {
   opacity: 0.2;
 }
 
-.main-info-title,
-.main-contacts-title {
+.main-info-title, .main-contacts-title {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
@@ -808,8 +789,7 @@ a {
   letter-spacing: 0.2em;
 }
 
-.main-info-text,
-.main-contacts-text {
+.main-info-text, .main-contacts-text {
   font-weight: 300;
   font-size: 15px;
   line-height: 28px;
@@ -824,8 +804,7 @@ a {
   color: var(--basic-black);
 }
 
-.main-info-link,
-.main-contacts-link {
+.main-info-link, .main-contacts-link {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -835,9 +814,7 @@ a {
   color: var(--basic-black);
 }
 
-
 /* Footer */
-
 
 .main-footer-logo-link:hover {
   opacity: 0.6;
