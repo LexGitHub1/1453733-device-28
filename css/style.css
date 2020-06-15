@@ -105,19 +105,18 @@ a {
 }
 
 .main-header {
-  /* margin-bottom: 50px; */
   text-align: center;
   background-color: var(--special-fill);
   min-height: 344px;
 }
 
-.main-content {
-  /* margin-bottom: 86px; */
+.main-header-catalog {
+  text-align: center;
+  background-color: var(--special-fill);
+  min-height: 206px;
 }
 
 .main-footer {
-  padding-top: 46px;
-  /* padding-bottom: 63px; */
   text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-dark);
@@ -153,68 +152,28 @@ a {
   margin-left: 38px;
 }
 
-.option-footer-login {
-  display: flex;
-  margin-left: 696px;
-}
-
-.option-footer-compare {
-  display: flex;
-  margin-left: 23px;
-}
-
-.option-footer-cart {
-  display: flex;
-  margin-left: 62px;
-}
-
-/* .footer-logo-nav-wrapper {
-  display: flex;
-} */
-
-.logo-container-footer {
-  width: 163px;
-  margin-left: 60px;
-}
-
-.footer-socials-list {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: inline-flex;
-  justify-content: flex-start;
-}
-
-.footer-socials-list li:nth-of-type(1) {
-  flex-basis: 25%;
-  padding-left: 19px;
-}
-
-.footer-socials-list li:nth-of-type(2) {
-  flex-basis: 25%;
-  padding-left: 35px;
-}
-
-.footer-socials-list li:nth-of-type(3) {
-  flex-basis: 50%;
-  text-align: right;
-}
-
 .option-header-login-catalog {
-  margin-left: 420px;
+  display: flex;
+  padding: 0px;
+  margin-left: 385px;
 }
 
 .option-header-out-catalog {
+  display: flex;
+  padding: 0px;
   margin-left: -15px;
 }
 
 .option-header-compare-catalog {
-  margin-left: 33px;
+  display: flex;
+  padding: 0px;
+  margin-left: 53px;
 }
 
 .option-header-cart-catalog {
-  margin-left: 28px;
+  display: flex;
+  padding: 0px;
+  margin-left: 30px;
 }
 
 /* .nav-menu {
@@ -267,7 +226,6 @@ a {
   margin-left: 89px;
   margin-top: -143px;
 }
-
 
 .option-one-img {
   grid-area: img;
@@ -440,7 +398,6 @@ a {
   grid-gap: 40px;
 }
 
-
 .option-services-buttons {
   padding: 0px;
   margin: -10px 0px 0px 0px;
@@ -451,99 +408,194 @@ a {
   margin: -68px 0px 0px 0px;
 }
 
-/* .main-popular-item-link {
-  margin-left: 20px;
-} */
-
-
-/* .option-catalog {
-  margin-right: 349px;
-  margin-left: 60px;
-}
-
-.option-warranty {
-  margin-left: 38px;
-}
-
-.option-contacts {
-  margin-left: 111px;
-} */
-
-.company {
+.option-company {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, auto);
+  max-width: 1160px;
   margin-top: 90px;
   margin-bottom: 86px;
 }
 
-.main-info {
+.option-about-company {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "title"
+    "content-a"
+    "content-b"
+    "list"
+    "button";
   width: 473px;
-  min-height: 580px;
-  margin-right: 127px;
 }
 
-.main-contacts {
+.option-about-company-title {
+  grid-area: title;
+  margin-top: 57px;
+  margin-bottom: 50px;
+}
+
+.option-about-company-content-a {
+  grid-area: content-a;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.option-about-company-content-b {
+  grid-area: content-b;
+  margin-top: 0px;
+  margin-bottom: 60px;
+}
+
+.option-about-company-list {
+  grid-area: list;
+  margin-top: 0px;
+  margin-bottom: 84px;
+}
+
+.option-about-company-button {
+  grid-area: button;
+  margin-left: 24px;
+}
+
+.option-contacts-company {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "title"
+    "content-a"
+    "img"
+    "button";
+  margin-left: 127px;
   width: 560px;
-  min-height: 580px;
 }
 
-.main-menu-container {
+.option-contacts-company-title {
+  grid-area: title;
+  margin-top: 57px;
+  margin-bottom: 50px;
+}
+
+.option-contacts-company-content-a {
+  grid-area: content-a;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.option-contacts-company-img {
+  grid-area: img;
+  margin-bottom: 85px;
+}
+
+.option-contacts-company-button {
+  grid-area: button;
+  height: 33px;
+  margin-top: 0px;
+  margin-left: 40px;
+}
+
+.option-footer-nav {
   display: flex;
+  max-width: 100%;
+  margin-top: 46px;
+  margin-bottom: -20px;
+}
+
+.option-footer-login {
+  margin-left: 860px;
   padding: 0px;
 }
 
-/*
-.option-place {
-  margin-left: 60px;
-}
-*/
-
-.option-footer-delivery {
-  margin-left: 156px;
-}
-
-.option-footer-warranty {
-  margin-left: 36px;
-}
-
-.option-footer-contacts {
-  margin-left: 36px;
-}
-
-.option-telephone {
-  margin-left: 239px;
-}
-
-/* .footer-socials-container {
-  display: flex;
-  flex-direction: row-reverse;
-  padding-top: 67px;
-}
-
-.logo-html-link {
-  margin-left: 520px;
-} */
-
 .option-footer-login-catalog {
-  margin-left: 543px;
+  margin-left: 706px;
+  padding: 0px;
 }
 
 .option-footer-out-catalog {
   margin-left: 24px;
+  padding: 0px;
+}
+
+.option-footer-compare {
+  margin-left: 63px;
+  padding: 0px;
 }
 
 .option-footer-compare-catalog {
-  margin-left: 64px;
+  margin-left: 29px;
+  padding: 0px;
 }
 
-/*
+.option-footer-cart {
+  margin-left: 62px;
+  padding: 0px;
+}
+
 .option-footer-cart-catalog {
   margin-left: 62px;
-} */
+  padding: 0px;
+}
 
-/* .option-crumbs {
+.logo-container-footer {
   display: flex;
-} */
+  margin-bottom: 40px;
+}
+
+.main-menu-container {
+  display: flex;
+  max-width: 100%;
+  margin-bottom: 67px;
+}
+
+.option-footer-place {
+  padding: 0px;
+}
+
+.option-footer-delivery {
+  margin-left: 156px;
+  padding: 0px;
+}
+
+.option-footer-warranty {
+  margin-left: 36px;
+  padding: 0px;
+}
+
+.option-footer-contacts {
+  margin-left: 36px;
+  padding: 0px;
+}
+
+.option-telephone {
+  margin-left: auto;
+  padding: 0px;
+}
+
+.footer-socials-container {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin-bottom: 65px;
+}
+
+.option-footer-facebook {
+  margin-left: 460px;
+  padding: 0px;
+}
+
+.option-footer-instagram {
+  margin-left: 20px;
+  padding: 0px;
+}
+
+.option-footer-twitter {
+  margin-left: 20px;
+  padding: 0px;
+}
+
+.logo-html-link {
+  margin-left: auto;
+  padding: 0px;
+}
 
 .breadcrumbs-menu-list {
   display: flex;
@@ -564,6 +616,7 @@ a {
 
 .catalog-wrapper {
   display: flex;
+  width: 100%;
 }
 
 .catalog-left-side-wrapper, .catalog-right-side-wrapper {
@@ -618,6 +671,8 @@ a {
   grid-template-columns: 360px 360px;
   grid-gap: 40px;
   width: 832px;
+  margin-top: 70px;
+  margin-left: 72px;
   min-height: 200px;
 }
 
@@ -628,6 +683,12 @@ a {
 
 .goods-nav {
   display: flex;
+  width: 760px;
+  padding: 0px;
+  margin-top: 40px;
+  margin-left: 72px;
+  margin-bottom: 78px;
+  justify-content: space-between;
 }
 
 .goods-sorting {

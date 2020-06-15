@@ -9,7 +9,7 @@
 </head>
 
 <body class="page-body">
-  <header class="main-header container">
+  <header class="main-header-catalog container">
 
     <nav class="main-nav">
       <div class="logo-container-header">
@@ -27,21 +27,25 @@
           <button class="nav-search-button visually-hidden" type="submit">Найти</button>
         </form>
 
-        <ul class="nav-menu">
-          <li><a class="nav-menu-link option-header-login-catalog" href="blank.html">Валентин Петухов</a></li>
-          <li><a class="nav-menu-link nav-menu-link-out option-header-out-catalog" href="blank.html">Выйти</a></li>
+        <ul class="nav-menu option-header-login-catalog">
+          <li><a class="nav-menu-link" href="blank.html">Валентин Петухов</a></li>
         </ul>
-        <ul class="nav-menu">
-          <li><a class="nav-menu-link option-header-compare-catalog" href="blank.html">Сравнить</a></li>
-          <li><a class="nav-menu-link option-header-cart-catalog" href="blank.html">Корзина</a></li>
+        <ul class="nav-menu option-header-out-catalog">
+          <li><a class="nav-menu-link" href="blank.html">Выйти</a></li>
+        </ul>
+        <ul class="nav-menu option-header-compare-catalog">
+          <li><a class="nav-menu-link" href="blank.html">Сравнить</a></li>
+        </ul>
+        <ul class="nav-menu option-header-cart-catalog">
+          <li><a class="nav-menu-link" href="blank.html">Корзина</a></li>
         </ul>
       </div>
 
       <ul class="main-menu">
-        <li><a class="main-menu-link option-catalog" href="blank.html">Каталог товаров</a></li>
-        <li><a class="header-services-link option-delivery" href="blank.html">Доставка</a></li>
-        <li><a class="header-services-link option-warranty" href="blank.html">Гарантия</a></li>
-        <li><a class="header-services-link option-contacts" href="blank.html">Контакты</a></li>
+        <li><a class="main-menu-link" href="#">Каталог товаров</a></li>
+        <li><a class="header-services-link" href="blank.html">Доставка</a></li>
+        <li><a class="header-services-link" href="blank.html">Гарантия</a></li>
+        <li><a class="header-services-link" href="blank.html">Контакты</a></li>
       </ul>
 
       <ul class="main-submenu visually-hidden">
@@ -236,44 +240,57 @@
     <div class="container">
       <nav class="main-nav">
 
-        <div class="footer-logo-nav-wrapper">
-          <div class="logo-container-footer">
-            <a class="main-footer-logo-link" href="index.html">
-              <img src="img/logo-device-yellow.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
-            </a>
-          </div>
-
-          <ul class="nav-menu">
-            <li><a class="footer-user-enter option-footer-login-catalog" href="blank.html">Валентин Петухов</a></li>
-            <li><a class="footer-user-out option-footer-out-catalog" href="blank.html">Выйти</a></li>
+        <div class="option-footer-nav">
+          <ul class="nav-menu option-footer-login-catalog">
+            <li><a class="footer-user-enter" href="blank.html">Валентин Петухов</a></li>
           </ul>
-          <ul class="nav-menu">
-            <li><a class="footer-user-compare option-footer-compare-catalog" href="blank.html">Сравнить</a></li>
-            <li><a class="footer-user-cart option-footer-cart-catalog" href="blank.html">Корзина</a></li>
+          <ul class="nav-menu option-footer-out-catalog">
+            <li><a class="nav-menu-link" href="blank.html">Выйти</a></li>
+          </ul>
+          <ul class="nav-menu option-footer-compare-catalog">
+            <li><a class="footer-user-compare" href="blank.html">Сравнить</a></li>
+          </ul>
+          <ul class="nav-menu option-footer-cart-catalog">
+            <li><a class="footer-user-cart" href="blank.html">Корзина</a></li>
           </ul>
         </div>
 
+        <div class="logo-container-footer">
+          <a class="main-footer-logo-link" href="index.html">
+            <img src="img/logo-device-yellow.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
+          </a>
+        </div>
+
         <div class="main-menu-container">
-          <p class="footer-content option-place">г. Москва, ул. Строителей, 15</p>
-          <ul class="nav-menu">
-            <li><a class="footer-services-link option-footer-delivery" href="blank.html">Доставка</a></li>
-            <li><a class="footer-services-link option-footer-warranty" href="blank.html">Гарантия</a></li>
-            <li><a class="footer-services-link option-footer-contacts" href="blank.html">Контакты</a></li>
+          <p class="footer-content option-footer-place">г. Москва, ул. Строителей, 15</p>
+          <ul class="nav-menu option-footer-delivery">
+            <li><a class="footer-services-link" href="blank.html">Доставка</a></li>
           </ul>
-          <p>
-            <a class="footer-content option-telephone" href="tel:+74954959595">+7 (495) 495-95-95</a>
+          <ul class="nav-menu option-footer-warranty">
+            <li><a class="footer-services-link" href="blank.html">Гарантия</a></li>
+          </ul>
+          <ul class="nav-menu option-footer-contacts">
+            <li><a class="footer-services-link" href="blank.html">Контакты</a></li>
+          </ul>
+          <p class="option-telephone">
+            <a class="footer-content" href="tel:+74954959595">+7 (495) 495-95-95</a>
           </p>
         </div>
 
         <div class="footer-socials-container">
+          <ul class="footer-socials-list option-footer-facebook">
+            <li><a class="footer-socials-link" href="#">Facebook</a></li>
+          </ul>
+          <ul class="footer-socials-list option-footer-instagram">
+            <li><a class="footer-socials-link" href="#">Instagram</a></li>
+          </ul>
+          <ul class="footer-socials-list option-footer-twitter">
+            <li><a class="footer-socials-link" href="#">Twitter</a></li>
+          </ul>
+
           <a class="logo-html-link" href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-html.svg" width="27" height="34" alt="Логотип HTML Academy">
           </a>
-          <ul class="footer-socials-list">
-            <li><a class="footer-socials-link" href="#">Facebook</a></li>
-            <li><a class="footer-socials-link" href="#">Instagram</a></li>
-            <li><a class="footer-socials-link" href="#">Twitter</a></li>
-          </ul>
         </div>
       </nav>
     </div>
