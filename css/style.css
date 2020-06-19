@@ -297,7 +297,7 @@ a.nav-menu-link {
   right: 80px;
   width: 14px;
   height: 14px;
-  background-image: url("../img/icon-chart.svg");
+  background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -898,68 +898,6 @@ p.footer-content {
 .option-telephone {
   margin-left: auto;
   padding: 0px;
-}
-
-.footer-socials-container {
-  display: flex;
-  align-items: center;
-  max-width: 100%;
-  margin-bottom: 65px;
-}
-
-.option-footer-facebook {
-  margin-left: 460px;
-  padding: 0px;
-}
-
-a.footer-socials-link {
-  position: relative;
-}
-
-.decor-facebook::before {
-  content: "";
-  position: absolute;
-  left: 43px;
-  bottom: -13px;
-  width: 32px;
-  height: 32px;
-  background-image: url("../img/simple-icons-facebook.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.option-footer-instagram {
-  margin-left: 20px;
-  padding: 0px;
-}
-
-.decor-instagram::before {
-  content: "";
-  position: absolute;
-  left: 75px;
-  bottom: -13px;
-  width: 32px;
-  height: 32px;
-  background-image: url("../img/simple-icons-instagram.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.option-footer-twitter {
-  margin-left: 20px;
-  padding: 0px;
-}
-
-.decor-twitter::before {
-  content: "";
-  position: absolute;
-  left: 107px;
-  bottom: -13px;
-  width: 32px;
-  height: 32px;
-  background-image: url("../img/simple-icons-twitter.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 ul.breadcrumbs-menu-list {
