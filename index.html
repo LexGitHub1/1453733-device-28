@@ -11,51 +11,50 @@
 <body class="page-body">
   <header class="main-header container">
 
-    <nav class="main-nav">
-      <div class="logo-container-header">
-        <a class="main-header-logo-link" title="Главная страница">
-          <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
-        </a>
-      </div>
+    <div class="logo-container-header">
+      <a class="main-header-logo-link" title="Главная страница">
+        <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
+      </a>
+    </div>
 
-      <div class="search-container">
-        <form action="https://echo.htmlacademy.ru" method="GET">
-          <p class="nav-search">
-            <label class="visually-hidden" for="search">Поиск по сайту</label>
-            <input id="search" type="search" name="search" placeholder="Поиск по сайту">
-          </p>
-          <button class="nav-search-button visually-hidden" type="submit">Найти</button>
-        </form>
+    <div class="user-nav-container">
+      <form action="#" class="search-form" method="POST">
+        <label for="search-field" class="search-form-label"><span class="visually-hidden">Поиск</span></label>
+        <input type="text" class="search-form-input" id="search-field" placeholder="Поиск по сайту">
+        <button type="submit" class="search-form-button"><span class="search-form-search-text">Найти</span></button>
+      </form>
 
-        <ul class="nav-menu option-header-login">
-          <li><a class="nav-menu-link decor-login" href="blank.html">Войти</a></li>
-        </ul>
-        <ul class="nav-menu option-header-compare">
-          <li><a class="nav-menu-link decor-compare" href="blank.htm ццl">Сравнить</a></li>
-        </ul>
-        <ul class="nav-menu option-header-cart">
-          <li><a class="nav-menu-link" href="blank.html">Корзина</a></li>
-        </ul>
-      </div>
-
-      <ul class="main-menu">
-        <li><a class="main-menu-link" href="catalog.html">Каталог товаров</a></li>
-        <li><a class="header-services-link" href="blank.html">Доставка</a></li>
-        <li><a class="header-services-link" href="blank.html">Гарантия</a></li>
-        <li><a class="header-services-link" href="blank.html">Контакты</a></li>
+      <ul class="nav-menu option-header-login">
+        <li><a class="nav-menu-link decor-login" href="blank.html">Войти</a></li>
       </ul>
+      <ul class="nav-menu option-header-compare">
+        <li><a class="nav-menu-link decor-compare" href="blank.html">Сравнить</a></li>
+      </ul>
+      <ul class="nav-menu option-header-cart">
+        <li><a class="nav-menu-link decor-cart" href="blank.html">Корзина</a></li>
+      </ul>
+    </div>
 
-      <ul class="main-submenu visually-hidden">
-        <li><a class="main-submenu-link" href="blank.html">Виртуальная реальность</a></li>
-        <li><a class="main-submenu-link" href="blank.html">Моноподы для селфи</a></li>
-        <li><a class="main-submenu-link" href="blank.html">Экшн-камеры</a></li>
-        <li><a class="main-submenu-link" href="blank.html">Фитнес-браслеты</a></li>
-        <li><a class="main-submenu-link" href="blank.html">Умные часы</a></li>
-        <li><a class="main-submenu-link" href="blank.html">Квадрокоптер</a></li>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-list-item nav-list-item-open"><a href="catalog.html">Каталог товаров</a>
+          <div class="nav-list-wrapper">
+            <ul class="nav-list-sub-list">
+              <li class="nav-list-sub-item"><a href="catalog.html">Виртуальная реальность</a></li>
+              <li class="nav-list-sub-item"><a href="catalog.html">Фитнес браслеты</a></li>
+              <li class="nav-list-sub-item"><a href="catalog.html">Квадрокоптер</a></li>
+              <li class="nav-list-sub-item"><a href="catalog.html">Моноподы для селфи</a></li>
+              <li class="nav-list-sub-item"><a href="catalog.html">Умные часы</a></li>
+              <li class="nav-list-sub-item"><a href="catalog.html">Экшн-камеры</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-list-item"><a href="#">Доставка</a></li>
+        <li class="nav-list-item"><a href="#">Гарантия</a></li>
+        <li class="nav-list-item"><a href="#">Контакты</a></li>
       </ul>
     </nav>
   </header>
-
 
   <main class="main-content">
     <section class="main-slider container">
@@ -217,7 +216,7 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a class="main-info-link option-about-company-button" href="blank.html">Подробнее о нас</a>
+        <a class="main-info-link option-about-company-button button" href="blank.html"><span>Подробнее о нас</span></a>
       </section>
 
       <section class="main-contacts option-contacts-company">
@@ -229,7 +228,8 @@
         <a class="option-contacts-company-img" href="blank.html">
           <img src="img/map-1.png" width="560" height="220" alt="Карта офиса по адресу улица Строителей, 15">
         </a>
-        <a class="main-contacts-link option-contacts-company-button" href="blank.html">Напишите нам</a>
+        <a class="main-contacts-link option-contacts-company-button button" href="blank.html"><span>Напишите
+            нам</span></a>
       </section>
     </div>
   </main>
@@ -240,13 +240,13 @@
 
         <div class="option-footer-nav">
           <ul class="nav-menu option-footer-login">
-            <li><a class="footer-user-enter" href="blank.html">Войти</a></li>
+            <li><a class="footer-user-enter decor-footer-login" href="blank.html">Войти</a></li>
           </ul>
           <ul class="nav-menu option-footer-compare">
-            <li><a class="footer-user-compare" href="blank.html">Сравнить</a></li>
+            <li><a class="footer-user-compare decor-footer-compare" href="blank.html">Сравнить</a></li>
           </ul>
           <ul class="nav-menu option-footer-cart">
-            <li><a class="footer-user-cart" href="blank.html">Корзина</a></li>
+            <li><a class="footer-user-cart decor-footer-cart" href="blank.html">Корзина</a></li>
           </ul>
         </div>
 
@@ -272,15 +272,35 @@
           </p>
         </div>
 
-        <div class="footer-socials-container">
-          <ul class="footer-socials-list option-footer-facebook">
-            <li><a class="footer-socials-link" href="#">Facebook</a></li>
-          </ul>
-          <ul class="footer-socials-list option-footer-instagram">
-            <li><a class="footer-socials-link" href="#">Instagram</a></li>
-          </ul>
-          <ul class="footer-socials-list option-footer-twitter">
-            <li><a class="footer-socials-link" href="#">Twitter</a></li>
+        <div class="footer-socials">
+          <ul class="socials">
+            <li>
+              <a class="socials-link" href="#">
+                <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M31.997 16c0-8.837-7.162-16-15.998-16C7.163 0 0 7.163 0 16c0 7.984 5.85 14.603 13.499 15.803V20.624H9.437v-4.625H13.5v-3.524c0-4.011 2.389-6.226 6.042-6.226 1.751 0 3.582.312 3.582.312V10.5h-2.016c-1.987 0-2.607 1.233-2.607 2.498V16h4.437l-.709 4.625H18.5v11.179c7.648-1.2 13.499-7.819 13.499-15.804h-.002z"
+                    fill="#fff" fill-opacity=".3" /></svg>
+                <span class="visually-hidden">Ссылка на нас в Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a class="socials-link" href="#">
+                <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.8 16a4.8 4.8 0 11-9.6 0c0-.274.029-.54.078-.8H9.6v6.395c0 .445.36.805.805.805h11.192a.805.805 0 00.803-.805V15.2h-1.678c.05.26.078.527.078.8zM16 19.2a3.202 3.202 0 10-.002-6.403A3.202 3.202 0 0016 19.2zm3.84-6.56h1.918a.482.482 0 00.482-.48v-1.918a.481.481 0 00-.482-.482H19.84a.482.482 0 00-.482.482v1.918c.002.264.218.48.482.48zM16 .64a15.36 15.36 0 100 30.72A15.36 15.36 0 0016 .64zm8 21.582C24 23.2 23.2 24 22.222 24H9.777C8.8 24 8 23.2 8 22.223V9.777C8 8.8 8.8 8 9.777 8h12.445C23.2 8 24 8.8 24 9.778v12.444z"
+                    fill="#fff" fill-opacity=".3" /></svg>
+                <span class="visually-hidden">Ссылка на нас в Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a class="socials-link" href="#">
+                <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16 32c-2.167 0-4.24-.422-6.219-1.266-1.979-.843-3.682-1.979-5.11-3.406-1.426-1.427-2.562-3.13-3.405-5.11A15.697 15.697 0 010 16c0-2.167.422-4.24 1.266-6.219.843-1.979 1.979-3.682 3.406-5.11 1.427-1.426 3.13-2.562 5.11-3.405A15.696 15.696 0 0116 0c2.167 0 4.24.422 6.219 1.266 1.979.843 3.682 1.979 5.11 3.406 1.426 1.427 2.562 3.13 3.405 5.11A15.697 15.697 0 0132 16c0 2.167-.422 4.24-1.266 6.219-.843 1.979-1.979 3.682-3.406 5.11-1.427 1.426-3.13 2.562-5.11 3.405A15.698 15.698 0 0116 32zm9.406-24a5.912 5.912 0 00-.562.344l-.61.406-.578.313L23 9.28C22.23 8.427 21.281 8 20.156 8 17.72 8 16.5 9.02 16.5 11.063v1.843c-3.354-.166-5.927-1.396-7.719-3.687C8.261 9.76 8 10.354 8 11c0 1.375.51 2.417 1.531 3.125-.125 0-.302.01-.531.031-.23.021-.411.021-.547 0A1.566 1.566 0 018 14c0 .958.255 1.755.766 2.39.51.636 1.213 1.047 2.109 1.235-.208.25-.5.375-.875.375-.333 0-.625-.094-.875-.281 0 .812.39 1.442 1.172 1.89.781.448 1.661.683 2.64.703-.374.563-.921.985-1.64 1.266A6.246 6.246 0 019 22c-.292 0-.693-.073-1.203-.219A16.21 16.21 0 007 21.563c.333.666 1.016 1.24 2.047 1.718 1.031.48 2.338.719 3.922.719 1.396 0 2.698-.245 3.906-.734 1.208-.49 2.24-1.141 3.094-1.953a12.776 12.776 0 002.203-2.782 13.08 13.08 0 001.375-3.234C23.849 14.182 24 13.083 24 12c0-.042.125-.13.375-.266.25-.135.542-.317.875-.546.333-.23.583-.47.75-.72-1.125 0-1.875.022-2.25.063.73-.437 1.281-1.281 1.656-2.531z"
+                    fill="#fff" fill-opacity=".3" /></svg>
+                <span class="visually-hidden">Ссылка на нас в Twitter</span>
+              </a>
+            </li>
           </ul>
 
           <a class="logo-html-link" href="https://htmlacademy.ru/intensive/htmlcss">
@@ -291,35 +311,37 @@
     </div>
   </footer>
 
-  <section class="modal">
-    <h2 class="visually-hidden">Карта офиса</h2>
-
-    <img src="img/map-big-1.png" width="994" height="593" alt="Карта офиса по адресу улица Строителей, 15">
-    <button type="button">
-      <span class="visually-hidden">Кнопка закрытия окна с картой офиса</span>
-    </button>
+  <section class="page-modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe class="modal-map-iframe"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931582563!3d55.68703098053581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1590389292816!5m2!1sru!2sru"
+      width="960" height="560" allowfullscreen aria-hidden="false" tabindex="0"
+      title="Адрес офиса - г.Москва улица Строителей дом 15"></iframe>
+    <button class="modal-button modal-map-close" type="button" aria-label="Закрыть карту"></button>
   </section>
 
-  <div class="modal">
-    <form action="blank.html" method="post">
-      <p>
-        <label for="user-name">Ваше имя:</label>
-        <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+  <section class="page-modal writeus">
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <form class="writeus-form" action="https://echo.htmlacademy.ru" method="POST">
+      <p class="writeus-container">
+        <label class="writeus-label" for="person">Ваше имя:</label>
+        <input class="writeus-input" type="text" name="person" id="person" placeholder="Имя Фамилия"
+          pattern="[a-zA-Zа-яА-ЯёЁ ]+">
       </p>
-      <p>
-        <label for="user-email">Ваш e-mail:</label>
-        <input id="user-email" type="email" name="email" placeholder="email@example.com">
+      <p class="writeus-container">
+        <label class="writeus-label" for="person-email">Ваш e-mail:</label>
+        <input class="writeus-input" type="email" name="person-email" id="person-email" placeholder="email@example.com">
       </p>
-      <p>
-        <label for="user-message">Текст письма:</label>
-        <textarea id="user-message">В свободной форме</textarea>
+      <p class="writeus-container writeus-container-full">
+        <label class="writeus-label" for="person-message">Текст письма:</label>
+        <textarea class="writeus-input writeus-input-textarea" name="person-message" id="person-message" cols="30"
+          rows="8" placeholder="В свободной форме"></textarea>
       </p>
-      <button type="submit">Отправить</button>
+      <button class="button writeus-button" type="submit">Отправить</button>
     </form>
-    <button type="button">
-      <span class="visually-hidden">Кнопка закрытия окна формы обратной связи</span>
-    </button>
-  </div>
+    <button class="modal-button writeus-close" type="button" aria-label="Закрыть окно обратной связи"></button>
+  </section>
+
 </body>
 
 </html>
