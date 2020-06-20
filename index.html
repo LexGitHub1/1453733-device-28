@@ -11,28 +11,24 @@
 <body class="page-body">
   <header class="main-header container">
 
-    <div class="logo-container-header">
-      <a class="main-header-logo-link" title="Главная страница">
-        <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
-      </a>
-    </div>
+    <a class="main-header-logo-link" title="Главная страница">
+      <img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
+    </a>
 
     <div class="user-nav-container">
-      <form action="#" class="search-form" method="POST">
+      <form action="https://echo.htmlacademy.ru/" class="search-form" method="GET">
         <label for="search-field" class="search-form-label"><span class="visually-hidden">Поиск</span></label>
-        <input type="text" class="search-form-input" id="search-field" placeholder="Поиск по сайту">
+        <input type="search" class="search-form-input" id="search-field" placeholder="Поиск по сайту">
         <button type="submit" class="search-form-button"><span class="search-form-search-text">Найти</span></button>
       </form>
 
-      <ul class="nav-menu option-header-login">
-        <li><a class="nav-menu-link decor-login" href="blank.html">Войти</a></li>
-      </ul>
-      <ul class="nav-menu option-header-compare">
-        <li><a class="nav-menu-link decor-compare" href="blank.html">Сравнить</a></li>
-      </ul>
-      <ul class="nav-menu option-header-cart">
-        <li><a class="nav-menu-link decor-cart" href="blank.html">Корзина</a></li>
-      </ul>
+      <div class="nav-menu option-header-login">
+        <a class="nav-menu-link decor-login" href="blank.html">Войти</a>
+      </div>
+      <div class="nav-menu option-header-compare">
+        <a class="nav-menu-link decor-compare" href="blank.html">Сравнить</a>
+        <a class="nav-menu-link decor-cart" href="blank.html">Корзина</a>
+      </div>
     </div>
 
     <nav>
@@ -239,22 +235,18 @@
       <nav class="main-nav">
 
         <div class="option-footer-nav">
-          <ul class="nav-menu option-footer-login">
-            <li><a class="footer-user-enter decor-footer-login" href="blank.html">Войти</a></li>
-          </ul>
-          <ul class="nav-menu option-footer-compare">
-            <li><a class="footer-user-compare decor-footer-compare" href="blank.html">Сравнить</a></li>
-          </ul>
-          <ul class="nav-menu option-footer-cart">
-            <li><a class="footer-user-cart decor-footer-cart" href="blank.html">Корзина</a></li>
-          </ul>
+          <div class="nav-menu option-footer-login">
+            <a class="footer-user-enter decor-footer-login" href="blank.html">Войти</a>
+          </div>
+          <div class="nav-menu option-footer-compare">
+            <a class="footer-user-compare decor-footer-compare" href="blank.html">Сравнить</a>
+            <a class="footer-user-cart option-footer-cart decor-footer-cart" href="blank.html">Корзина</a>
+          </div>
         </div>
 
-        <div class="logo-container-footer">
-          <a class="main-footer-logo-link" title="Главная страница">
-            <img src="img/logo-device-yellow.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
-          </a>
-        </div>
+        <a class="main-footer-logo-link" title="Главная страница">
+          <img src="img/logo-device-yellow.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
+        </a>
 
         <div class="main-menu-container">
           <p class="footer-content option-footer-place">г. Москва, ул. Строителей, 15</p>
