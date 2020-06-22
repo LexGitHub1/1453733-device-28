@@ -1148,6 +1148,19 @@ ul.goods-sorting {
   color: var(--basic-white);
 }
 
+p.slider-slogan {
+  position: relative;
+}
+
+.slider-slogan::before {
+  content: "";
+  position: absolute;
+  bottom: 190px;
+  width: 100px;
+  height: 7px;
+  background-color: var(--basic-white);
+}
+
 .slider-slogan {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
