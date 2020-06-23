@@ -143,7 +143,7 @@ a {
 a.main-header-logo-link {
   display: block;
   margin-left: 60px;
-  margin-top: 20px;
+  margin-top: 21px;
   padding: 0px 0px 25px 0px;
   height: 35px;
   width: 163px;
@@ -162,21 +162,26 @@ a.main-header-logo-link {
 .user-nav-container {
   display: flex;
   flex-wrap: wrap;
-  width: 1075px;
+  /* max-height: 30px; */
+  /* width: 1075px; */
   align-items: center;
-  margin-bottom: 20px;
+  margin-top: -18px;
   margin-left: 60px;
 }
 
+/* form.search-form {
+  height: 20px;
+} */
+
 .option-header-login {
-  padding-left: 120px;
+  padding-left: 125px;
 }
 
 .option-header-compare {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-left: 233px;
+  padding-left: 238px;
   width: 216px;
 }
 
@@ -184,7 +189,6 @@ a.main-header-logo-link {
   position: relative;
   display: flex;
   width: 440px;
-  min-height: 50px;
 }
 
 .search-form-label::before {
@@ -202,8 +206,7 @@ a.main-header-logo-link {
 .search-form-input {
   min-width: 355px;
   margin: 0;
-  padding: 15px;
-  padding-left: 40px;
+  padding: 0px 0px 0px 38px;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -277,7 +280,7 @@ a.nav-menu-link {
   content: "";
   position: absolute;
   top: 29px;
-  right: 80px;
+  right: 86px;
   width: 14px;
   height: 14px;
   background-image: url("../img/icon-chart.svg");
@@ -297,11 +300,15 @@ a.nav-menu-link {
   background-position: 0 0;
 }
 
+a.decor-cart {
+  padding-right: 7px;
+}
+
 .decor-cart::before {
   content: "";
   position: absolute;
   top: 30px;
-  right: 86px;
+  right: 95px;
   width: 10px;
   height: 10px;
   background-image: url("../img/icon-cart.svg");
@@ -339,23 +346,21 @@ a.nav-menu-link {
 ul.nav-list {
   width: 1067px;
   margin-left: 50px;
+  margin-bottom: 3px;
 }
 
 .nav-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 60px;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 0;
+  margin: 13px 0px 0px 60px;
   padding: 0;
   list-style: none;
 }
 
 .nav-list-item {
-  padding: 15px;
-  padding-right: 17px;
-  padding-left: 17px;
+  padding: 14px 15px 15px 20px;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -365,7 +370,7 @@ ul.nav-list {
 }
 
 .nav-list-item:last-of-type {
-  margin-left: 74px;
+  margin-left: 70px;
 }
 
 .nav-list-item:hover>a {
@@ -402,7 +407,7 @@ ul.nav-list {
   left: -50px;
   z-index: 1;
   display: grid;
-  min-height: 154px;
+  min-height: 98px;
   width: 1040px;
   margin: 0;
   padding-top: 20px;
@@ -466,8 +471,6 @@ ul.nav-list {
 .option-one-number {
   grid-area: number;
   max-width: 182px;
-  margin-bottom: -150px;
-  margin-left: 458px;
 }
 
 .option-one-slogan {
@@ -488,13 +491,10 @@ ul.nav-list {
   grid-area: button;
   max-width: 220px;
   margin-left: 127px;
-  max-height: 20px;
 }
 
 .option-one-table-a {
   grid-area: table-a;
-  max-width: 444px;
-  margin-left: 127px;
 }
 
 td.slider-features-data {
@@ -541,8 +541,6 @@ td.slider-features-data {
 
 .option-two-table-a {
   grid-area: table-a;
-  max-width: 200px;
-  margin-left: 139px;
 }
 
 .option-three-img {
@@ -584,15 +582,13 @@ td.slider-features-data {
 
 .option-three-table-a {
   grid-area: table-a;
-  max-width: 300px;
-  margin-left: 44px;
 }
 
 .option-company {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  margin-top: 147px;
-  margin-bottom: 86px;
+  margin-top: 137px;
+  margin-bottom: 60px;
 }
 
 .option-about-company {
@@ -604,8 +600,8 @@ td.slider-features-data {
 
 .option-about-company-title {
   grid-area: title;
-  margin-top: 0px;
-  margin-bottom: 50px;
+  margin-top: 12px;
+  margin-bottom: 25px;
 }
 
 h2.option-about-company-title {
@@ -615,7 +611,7 @@ h2.option-about-company-title {
 .option-about-company-title::before {
   content: "";
   position: absolute;
-  bottom: 98px;
+  bottom: 108px;
   width: 80px;
   height: 7px;
   background-color: var(--basic-black);
@@ -623,32 +619,53 @@ h2.option-about-company-title {
 
 .option-about-company-content-a {
   grid-area: content-a;
-  margin-top: 0px;
-  margin-bottom: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .option-about-company-content-b {
   grid-area: content-b;
-  margin-top: 0px;
-  margin-bottom: 60px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.transport-company li {
+  position: relative;
+}
+
+.transport-company li:before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  bottom: 0px;
+  left: -32px;
+  width: 4px;
+  height: 4px;
+  border: 2px solid #E5E5E5;
+  border-radius: 50%;
 }
 
 ul.transport-company {
   display: flex;
-  height: 107px;
   flex-direction: column;
   justify-content: space-between;
+  list-style: none;
+  height: 113px;
 }
 
 .option-about-company-list {
   grid-area: list;
-  margin-top: 0px;
-  margin-bottom: 84px;
+  padding-left: 32px;
+  margin-top: 45px
 }
 
 .option-about-company-button {
   grid-area: button;
-  margin-left: 24px;
+  padding-left: 3px;
+  height: 30px;
+  margin-top: 52px;
+  margin-bottom: 15px;
+  height: 22px;
 }
 
 a.option-about-company-button {
@@ -665,8 +682,8 @@ a.option-about-company-button {
 
 .option-contacts-company-title {
   grid-area: title;
-  margin-top: 0px;
-  margin-bottom: 50px;
+  margin-top: 12px;
+  margin-bottom: 25px;
 }
 
 h2.option-contacts-company-title {
@@ -676,7 +693,7 @@ h2.option-contacts-company-title {
 .option-contacts-company-title::before {
   content: "";
   position: absolute;
-  bottom: 98px;
+  bottom: 123px;
   width: 80px;
   height: 7px;
   background-color: var(--basic-black);
@@ -685,18 +702,22 @@ h2.option-contacts-company-title {
 .option-contacts-company-content-a {
   grid-area: content-a;
   margin-top: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .option-contacts-company-img {
   grid-area: img;
-  margin-bottom: 85px;
+  margin-top: 0px;
+  margin-bottom: 40px;
 }
 
 .option-contacts-company-button {
   grid-area: button;
-  margin-top: 0px;
-  margin-left: 40px;
+  margin-top: 15px;
+  padding-left: 2px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  height: 22px;
 }
 
 a.option-contacts-company-button {
@@ -707,8 +728,8 @@ a.option-contacts-company-button {
   display: flex;
   max-width: 100%;
   align-items: center;
-  margin-top: 26px;
-  margin-bottom: -15px;
+  margin-top: 47px;
+  margin-bottom: -2px;
 }
 
 a.footer-user-enter {
@@ -817,25 +838,17 @@ p.footer-content {
 .option-footer-place::before {
   content: "";
   position: absolute;
-  top: 88px;
+  top: 100px;
   width: 80px;
   height: 7px;
   background-color: var(--special-yellow-icons);
 }
 
-.option-footer-delivery {
-  margin-left: 156px;
-  padding: 0px;
-}
-
-.option-footer-warranty {
-  margin-left: 36px;
-  padding: 0px;
-}
-
-.option-footer-contacts {
-  margin-left: 36px;
-  padding: 0px;
+.option-footer-services {
+  display: flex;
+  justify-content: space-between;
+  width: 425px;
+  padding-left: 166px;
 }
 
 .option-telephone {
@@ -1134,9 +1147,9 @@ ul.goods-sorting {
 .main-slider {
   position: relative;
   z-index: 0;
-  min-height: 520px;
+  /* min-height: 600px; */
   margin-bottom: 65px;
-  background-image: linear-gradient(to bottom, var(--special-fill), var(--special-fill) 130px, var(--basic-white) 120px);
+  background-image: linear-gradient(to bottom, var(--special-fill), var(--special-fill) 146px, var(--basic-white) 130px);
 }
 
 .slider-number {
@@ -1146,6 +1159,9 @@ ul.goods-sorting {
   line-height: 219px;
   text-transform: uppercase;
   color: var(--basic-white);
+  margin-bottom: -146px;
+  margin-left: 458px;
+  margin-right: -4px;
 }
 
 p.slider-slogan {
@@ -1155,7 +1171,7 @@ p.slider-slogan {
 .slider-slogan::before {
   content: "";
   position: absolute;
-  bottom: 190px;
+  bottom: 168px;
   width: 100px;
   height: 7px;
   background-color: var(--basic-white);
@@ -1167,6 +1183,11 @@ p.slider-slogan {
   font-size: 47px;
   line-height: 58px;
   color: var(--basic-black);
+  padding-top: 38px;
+}
+
+.slider-content {
+  padding-top: 26px;
 }
 
 .slider-link {
@@ -1177,10 +1198,33 @@ p.slider-slogan {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--basic-black);
+  padding-left: 2px;
+  padding-right: 0px;
+  margin-top: 49px;
 }
 
 .slider-link:active {
   opacity: 0.3;
+}
+
+.slider-features {
+  margin-top: 48px;
+  margin-left: 125px;
+}
+
+.slider-features-upper-row {
+  display: flex;
+  justify-content: space-between;
+  width: 448px;
+  padding: 0px;
+}
+
+.slider-features-down-row {
+  display: flex;
+  justify-content: space-between;
+  width: 373px;
+  margin-top: -2px;
+  padding: 0px;
 }
 
 .slider-features-value {
@@ -1219,7 +1263,7 @@ p.slider-slogan {
 .slider-controls {
   position: absolute;
   right: 88px;
-  bottom: 170px;
+  bottom: 139px;
   z-index: 1;
   display: flex;
   justify-content: space-between;
@@ -1245,8 +1289,8 @@ p.slider-slogan {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 6px;
-  height: 6px;
+  width: 4px;
+  height: 4px;
   border: 1px solid var(--basic-black);
   border-radius: 50%;
   transform: translateX(-50%) translateY(-50%);
@@ -1277,6 +1321,10 @@ p.slider-slogan {
 
 .popular-image-inner:active {
   opacity: 0.3;
+}
+
+.main-popular {
+  margin-top: 115px;
 }
 
 .main-popular-list {
@@ -1330,8 +1378,8 @@ p.slider-slogan {
 .main-services-buttons::before {
   content: "";
   position: absolute;
-  top: -15px;
-  right: 0;
+  top: -79px;
+  right: -4px;
   width: 7px;
   height: 320px;
   background-color: var(--basic-black);
@@ -1340,7 +1388,7 @@ p.slider-slogan {
 .main-services-buttons-item {
   position: relative;
   width: 160px;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   background-color: transparent;
   border: none;
 }
@@ -1385,8 +1433,10 @@ p.slider-slogan {
 .option-services-buttons {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 0px;
-  margin: 55px 0px 0px 0px;
+  height: 164px;
+  margin: 95px 0px 0px 0px;
 }
 
 .option-section-title {
@@ -1402,17 +1452,14 @@ p.slider-slogan {
 .services-container {
   position: relative;
   display: none;
-  padding-top: 83px;
-  padding-right: 190px;
-  padding-bottom: 20px;
-  padding-left: 92px;
+  padding: 87px 190px 0px 30px;
 }
 
 .services-container::after {
   content: "";
   position: absolute;
-  top: 50px;
-  right: -20px;
+  top: 54px;
+  right: -50px;
   width: 200px;
   height: 220px;
   background-repeat: no-repeat;
@@ -1444,6 +1491,7 @@ p.slider-slogan {
   line-height: 28px;
   letter-spacing: 0.1em;
   color: var(--basic-black);
+  margin: 40px auto;
 }
 
 .main-services-buttons-item, .filter-buttons-item {
@@ -2084,10 +2132,9 @@ a.goods-card-link {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 136px;
-  margin-left: 495px;
-  padding: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 36px;
+  margin-left: 497px;
+  padding: 15px;
   list-style: none;
 }
 
@@ -2104,8 +2151,9 @@ a.goods-card-link {
 }
 
 .logo-html-link {
-  margin-left: 475px;
-  margin-top: 33px;
+  padding: 0px;
+  height: 34px;
+  margin: 50px 0px 0px 470px;
 }
 
 .page-modal {
