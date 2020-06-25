@@ -2224,6 +2224,17 @@ span.goods-card-content-price {
   transform: translateX(-50%) translateY(-50%);
 }
 
+.modal-show {
+  display: block;
+  -webkit-animation: 0.7s showup ease-in;
+  animation: 0.7s showup ease-in;
+}
+
+.modal-error {
+  -webkit-animation: shake 0.6s;
+  animation: shake 0.6s;
+}
+
 .modal-button {
   position: absolute;
   top: 20px;
@@ -2352,4 +2363,68 @@ textarea.writeus-input-textarea {
   width: 200px;
   background-color: inherit;
   border: none;
+}
+
+/* Keyfraymes */
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    transform: translateX(-50%) translateY(-50%);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-52%) translateY(-50%);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(-48%) translateY(-50%);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(-50%) translateY(-50%);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-52%) translateY(-50%);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(-48%) translateY(-50%);
+  }
+}
+
+@-webkit-keyframes showup {
+  0% {
+    left: 100%;
+    transform: translateX(10%) translateY(-50%);
+  }
+  60%, 80% {
+    left: 48%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  70%, 90% {
+    left: 52%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  100% {
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+@keyframes showup {
+  0% {
+    left: 100%;
+    transform: translateX(10%) translateY(-50%);
+  }
+  60%, 80% {
+    left: 48%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  70%, 90% {
+    left: 52%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  100% {
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
 }
