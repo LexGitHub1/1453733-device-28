@@ -1866,6 +1866,7 @@ p.slider-slogan {
   padding-left: 37px;
   text-align: left;
   border: none;
+  background-color: inherit;
 }
 
 .goods-sorting-link {
