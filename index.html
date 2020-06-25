@@ -100,10 +100,10 @@
             <a class="slider-link option-two-button button" href="catalog.html">Подробнее</a>
 
             <table class="slider-features option-two-table-a">
-              <tr>
+              <tr class="slider-features-upper-row">
                 <td class="slider-features-value">48 часов</td>
               </tr>
-              <tr>
+              <tr class="slider-features-down-row">
                 <td class="slider-features-data">Без подзарядки</td>
               </tr>
             </table>
@@ -300,7 +300,7 @@
         <p class="main-contacts-text option-contacts-company-content-a">Вы можете забрать товар сами, заехав в наш офис.
           Заодно, вы сможете проверить
           работоспособность покупки. Всякое бывает.</p>
-        <a class="option-contacts-company-img" href="blank.html">
+        <a class="option-contacts-company-img" href="https://goo.gl/maps/3fr4Yp8KG6HRxrEL6">
           <img src="img/map-1.png" width="560" height="220" alt="Карта офиса по адресу улица Строителей, 15">
         </a>
         <a class="main-contacts-link option-contacts-company-button button" href="blank.html"><span>Напишите
@@ -392,12 +392,13 @@
     <form class="writeus-form" action="https://echo.htmlacademy.ru" method="POST">
       <p class="writeus-container">
         <label class="writeus-label" for="person">Ваше имя:</label>
-        <input class="writeus-input" type="text" name="person" id="person" placeholder="Имя Фамилия"
+        <input class="writeus-input writeus-input-name" type="text" name="person" id="person" placeholder="Имя Фамилия"
           pattern="[a-zA-Zа-яА-ЯёЁ ]+">
       </p>
       <p class="writeus-container">
         <label class="writeus-label" for="person-email">Ваш e-mail:</label>
-        <input class="writeus-input" type="email" name="person-email" id="person-email" placeholder="email@example.com">
+        <input class="writeus-input writeus-input-email" type="email" name="person-email" id="person-email"
+          placeholder="email@example.com">
       </p>
       <p class="writeus-container writeus-container-full">
         <label class="writeus-label" for="person-message">Текст письма:</label>
