@@ -2288,6 +2288,10 @@ span.goods-card-content-price {
   border: none;
 }
 
+.modal-map-close {
+  z-index: 3;
+}
+
 /* Write us */
 
 .writeus {
