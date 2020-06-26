@@ -530,7 +530,7 @@ ul.nav-list {
 }
 
 .main-menu-link {
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: var(--bold-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
