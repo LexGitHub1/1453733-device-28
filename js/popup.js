@@ -46,7 +46,7 @@ loginForm.addEventListener("submit", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
+  if (evt.key === "Escape") {
     if (loginPopup.classList.contains("modal-show")) {
       evt.preventDefault();
       loginPopup.classList.remove("modal-show");
@@ -70,7 +70,7 @@ mapClose.addEventListener("click", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
+  if (evt.key === "Escape") {
     evt.preventDefault();
     if (mapPopup.classList.contains("modal-show")) {
       mapPopup.classList.remove("modal-show");
