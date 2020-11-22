@@ -704,18 +704,6 @@ p.slider-slogan {
   cursor: pointer;
 }
 
-.slider-button-checked::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 4px;
-  height: 4px;
-  border: 1px solid var(--basic-black);
-  border-radius: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
-
 .slider-button:focus {
   outline: none;
   box-shadow: 0 0 0 2px var(--basic-black);
@@ -791,9 +779,9 @@ span.option-two-number {
   margin-left: 440px
 }
 
-p.option-two-slogan {
+/* p.option-two-slogan {
   margin-left: 157px;
-}
+} */
 
 .option-two-slogan {
   grid-area: slogan;
@@ -802,9 +790,9 @@ p.option-two-slogan {
   margin-left: 139px;
 }
 
-p.option-two-content-a {
+/* p.option-two-content-a {
   margin-left: 157px;
-}
+} */
 
 .option-two-content-a {
   grid-area: content-a;
@@ -813,20 +801,20 @@ p.option-two-content-a {
   margin-left: 139px;
 }
 
-a.option-two-button {
+/* a.option-two-button {
   margin-left: 157px;
-}
+} */
 
 .option-two-button {
   grid-area: button;
   max-width: 220px;
   margin-left: 139px;
-  max-height: 20px;
+  /* max-height: 20px; */
 }
 
 table.option-two-table-a {
   margin-top: 50px;
-  margin-left: 155px;
+  margin-left: 139px;
 }
 
 .option-two-table-a {
@@ -883,7 +871,6 @@ a.option-three-button {
   grid-area: button;
   max-width: 220px;
   margin-left: 44px;
-  max-height: 20px;
 }
 
 table.option-three-table-a {
