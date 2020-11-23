@@ -1,3 +1,3 @@
 # Проект «Device»
 
-* Вёрстка: [Александр Панков](https://up.htmlacademy.ru/htmlcss/28/user/1453733).
+* Вёрстка: [Александр Панков](https://htmlacademy.ru/profile/id1453733).
